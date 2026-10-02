@@ -12,9 +12,24 @@ Etsy-optimized drafts for the six oversized tees and the Amaltas cap, built from
 
 ## Create the drafts
 
-**With Claude in Chrome**, from a Claude session on your own computer (the Claude Desktop app, or `claude remote-control` in a terminal), paste:
+**With Claude in Chrome**: sign in to Etsy in Chrome on your computer, open the Claude in Chrome side panel (or a Claude Desktop session that has Chrome connected), and paste:
 
-> Read `etsy/listings.json` from branch `claude/etsy-shopify-product-listings-ufwdqk` of `abdvikashtomar-crypto/claude-`. Using Claude in Chrome, open my Etsy shop manager (Veethreads1) and create each listing as a draft. For each one: upload the photos in order (`size_chart` means `defaults.size_chart_photo`; the photos are public Shopify links, so download them first if direct upload is awkward), then fill in the title, category, About (I did / A finished product / Made to order), price, variations (same price for every option, quantity 10 each), description (one line per array item), the 13 tags, materials and attributes, and choose my existing shipping and return policies. Click **Save as draft**, never Publish. Ask me before creating Neelbel, which may duplicate my Azure Bloom listing.
+```text
+Create draft listings in my Etsy shop (Veethreads1). Do not publish anything.
+
+1. Open https://raw.githubusercontent.com/abdvikashtomar-crypto/claude-/refs/heads/claude/etsy-shopify-product-listings-ufwdqk/etsy/listings.json and read it.
+2. For each item in "listings", go to Etsy Shop Manager > Listings > Add a listing and fill in:
+   - Photos: the URLs in "photos", in that order ("size_chart" means defaults.size_chart_photo). If you can't upload them, leave the photos for me.
+   - Title, price_usd, and the category (defaults.tee_category or defaults.cap_category)
+   - About: I did / A finished product / Made to order
+   - The "variations", same price for every option, quantity 10 each
+   - Description: the "description" lines joined with line breaks
+   - The 13 "tags", the "materials" and the "attributes"
+   - My existing shipping profile and return policy
+3. Click "Save as draft", never "Publish".
+4. Ask me before creating "neelbel": it may duplicate my Azure Bloom listing.
+When you finish, list the drafts you created.
+```
 
 **By hand**: in Shop Manager, go to Listings, then Add a listing, and copy each field from `LISTINGS.md`. Use **Save as draft** at the bottom of the form.
 
