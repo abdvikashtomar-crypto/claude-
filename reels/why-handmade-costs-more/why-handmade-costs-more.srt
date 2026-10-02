@@ -1,0 +1,52 @@
+1
+00:00:00,300 --> 00:00:02,830
+Ever wondered why handmade costs more?
+
+2
+00:00:02,850 --> 00:00:05,634
+A machine prints a T-shirt in 8 seconds.
+
+3
+00:00:05,900 --> 00:00:08,383
+This one is stitched, by hand.
+
+4
+00:00:09,100 --> 00:00:10,580
+Printed: seconds.
+
+5
+00:00:10,600 --> 00:00:12,730
+Machine embroidered: minutes.
+
+6
+00:00:12,750 --> 00:00:15,080
+Hand embroidered, hours.
+
+7
+00:00:15,100 --> 00:00:16,851
+One stitch, then the next.
+
+8
+00:00:17,100 --> 00:00:20,021
+By someone with 25 years in her fingers.
+
+9
+00:00:20,300 --> 00:00:22,248
+A machine runs 8 at once.
+
+10
+00:00:22,350 --> 00:00:23,555
+She makes one.
+
+11
+00:00:23,950 --> 00:00:26,503
+And she is paid fairly, for every hour.
+
+12
+00:00:27,050 --> 00:00:28,998
+You’re not paying for a T-shirt.
+
+13
+00:00:29,050 --> 00:00:30,707
+You’re paying for her time.
+

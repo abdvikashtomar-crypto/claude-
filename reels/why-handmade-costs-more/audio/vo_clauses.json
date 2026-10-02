@@ -1,0 +1,260 @@
+[
+ {
+  "id": "hook",
+  "dur": 2.2351666666666667,
+  "words": [
+   "Ever",
+   "wondered",
+   "why",
+   "handmade",
+   "costs",
+   "more?"
+  ],
+  "weights": [
+   3,
+   6,
+   3,
+   8,
+   5,
+   4
+  ]
+ },
+ {
+  "id": "print",
+  "dur": 2.483833333333333,
+  "words": [
+   "A",
+   "machine",
+   "prints",
+   "a",
+   "T-shirt",
+   "in",
+   "8",
+   "seconds."
+  ],
+  "weights": [
+   2,
+   6,
+   6,
+   2,
+   7,
+   2,
+   3,
+   7
+  ]
+ },
+ {
+  "id": "hand1",
+  "dur": 1.1927083333333333,
+  "words": [
+   "This",
+   "one",
+   "is",
+   "stitched,"
+  ],
+  "weights": [
+   3,
+   3,
+   2,
+   6
+  ]
+ },
+ {
+  "id": "hand2",
+  "dur": 0.7834583333333334,
+  "words": [
+   "by",
+   "hand."
+  ],
+  "weights": [
+   3,
+   4
+  ]
+ },
+ {
+  "id": "c1",
+  "dur": 1.2519166666666666,
+  "words": [
+   "Printed:",
+   "seconds."
+  ],
+  "weights": [
+   7,
+   7
+  ]
+ },
+ {
+  "id": "c2",
+  "dur": 1.9034166666666668,
+  "words": [
+   "Machine",
+   "embroidered:",
+   "minutes."
+  ],
+  "weights": [
+   6,
+   9,
+   6
+  ]
+ },
+ {
+  "id": "c3",
+  "dur": 1.1089166666666668,
+  "words": [
+   "Hand",
+   "embroidered,"
+  ],
+  "weights": [
+   4,
+   9
+  ]
+ },
+ {
+  "id": "c3b",
+  "dur": 0.7055833333333333,
+  "words": [
+   "hours."
+  ],
+  "weights": [
+   4
+  ]
+ },
+ {
+  "id": "c4",
+  "dur": 1.4507916666666667,
+  "words": [
+   "One",
+   "stitch,",
+   "then",
+   "the",
+   "next."
+  ],
+  "weights": [
+   3,
+   5,
+   3,
+   2,
+   5
+  ]
+ },
+ {
+  "id": "years",
+  "dur": 2.621166666666667,
+  "words": [
+   "By",
+   "someone",
+   "with",
+   "25",
+   "years",
+   "in",
+   "her",
+   "fingers."
+  ],
+  "weights": [
+   3,
+   6,
+   3,
+   10,
+   4,
+   2,
+   3,
+   6
+  ]
+ },
+ {
+  "id": "mach",
+  "dur": 1.64825,
+  "words": [
+   "A",
+   "machine",
+   "runs",
+   "8",
+   "at",
+   "once."
+  ],
+  "weights": [
+   2,
+   6,
+   4,
+   3,
+   2,
+   4
+  ]
+ },
+ {
+  "id": "one",
+  "dur": 0.9048333333333334,
+  "words": [
+   "She",
+   "makes",
+   "one."
+  ],
+  "weights": [
+   3,
+   5,
+   3
+  ]
+ },
+ {
+  "id": "paid",
+  "dur": 2.253416666666667,
+  "words": [
+   "And",
+   "she",
+   "is",
+   "paid",
+   "fairly,",
+   "for",
+   "every",
+   "hour."
+  ],
+  "weights": [
+   3,
+   3,
+   2,
+   4,
+   5,
+   4,
+   4,
+   3
+  ]
+ },
+ {
+  "id": "not",
+  "dur": 1.6482083333333333,
+  "words": [
+   "You\u2019re",
+   "not",
+   "paying",
+   "for",
+   "a",
+   "T-shirt."
+  ],
+  "weights": [
+   3,
+   4,
+   5,
+   4,
+   2,
+   7
+  ]
+ },
+ {
+  "id": "time",
+  "dur": 1.357375,
+  "words": [
+   "You\u2019re",
+   "paying",
+   "for",
+   "her",
+   "time."
+  ],
+  "weights": [
+   3,
+   5,
+   4,
+   3,
+   4
+  ]
+ }
+]
