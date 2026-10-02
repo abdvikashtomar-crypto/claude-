@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Thread Color Finder – DMC Floss Matcher by Vee Threads",
+  "short_name": "Thread Color Finder",
+  "version": "1.0.0",
+  "description": "Pick any colour on screen or from a photo and instantly find the closest DMC embroidery floss numbers.",
+  "homepage_url": "https://veethreads.com/?utm_source=chrome-extension&utm_medium=manifest&utm_campaign=thread-color-finder",
+  "permissions": ["sidePanel", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "action": {
+    "default_title": "Find DMC thread colours",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "minimum_chrome_version": "116"
+}

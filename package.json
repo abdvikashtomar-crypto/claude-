@@ -1,0 +1,16 @@
+{
+  "name": "thread-color-finder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DMC embroidery floss colour matcher Chrome extension by Vee Threads",
+  "type": "module",
+  "scripts": {
+    "icons": "node scripts/render-icons.mjs",
+    "test": "node scripts/test.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "zip": "sh scripts/build-zip.sh"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
