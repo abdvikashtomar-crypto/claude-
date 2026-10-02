@@ -1,0 +1,609 @@
+{
+  "shop": "Veethreads1",
+  "currency": "USD",
+  "researched_on": "2026-10-02",
+  "defaults": {
+    "status": "draft",
+    "who_made": "I did",
+    "what_is_it": "A finished product",
+    "when_made": "Made to order",
+    "type": "Physical item",
+    "renewal": "Automatic",
+    "personalization": "Off",
+    "quantity_per_variant": 10,
+    "shipping_profile": "Your existing T-shirt / cap shipping profile (processing time 7 to 10 days)",
+    "return_policy": "Your existing return and exchange policy",
+    "tee_category": "Clothing > Gender-Neutral Adult Clothing > Tops & Tees > T-shirts",
+    "cap_category": "Accessories > Hats & Head Coverings > Hats & Caps > Baseball & Trucker Caps",
+    "size_chart_photo": "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/share_image_87_new_1763869052130_8766_ddb58317-9a7c-48f4-b905-434904980aca.jpg?v=1775976697"
+  },
+  "listings": [
+    {
+      "key": "sunflower-necklace",
+      "shopify_id": "gid://shopify/Product/15404876267705",
+      "shopify_title": "Sunflower Necklace Hand-Embroidered Oversized T-Shirt",
+      "title": "Sunflower Embroidered Shirt, Hand Embroidered Neckline Tee, Oversized Cotton Floral T-Shirt, Cottagecore Gift for Her",
+      "price_usd": 46,
+      "category": "tee",
+      "variations": {
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "Primary color": [
+          "White",
+          "Black"
+        ]
+      },
+      "attributes": {
+        "Secondary color": "Yellow",
+        "Sleeve length": "Short sleeve",
+        "Neckline": "Crew neck",
+        "Material": "Cotton",
+        "Pattern": "Floral",
+        "Style": "Cottagecore"
+      },
+      "tags": [
+        "sunflower shirt",
+        "sunflower t-shirt",
+        "sunflower embroidery",
+        "embroidered shirt",
+        "hand embroidered tee",
+        "neckline embroidery",
+        "embroidered collar",
+        "cottagecore shirt",
+        "botanical shirt",
+        "flower lover gift",
+        "sunflower gift",
+        "flower shirt",
+        "gift for her"
+      ],
+      "materials": [
+        "cotton",
+        "embroidery thread"
+      ],
+      "photos": [
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_031711_be7d1a12-a466-4009-b8d8-cfa672d69e28.png?v=1790789615",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260930_172507_9eeb28df-87bd-4120-bb74-72b28518b3c8.png?v=1790789615",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_173118_6a492b51-ba1a-429e-ad27-07bb070fca21.png?v=1790789615",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260930_164931_1_756886bf-b659-4d15-8047-130a37751601.png?v=1790789615",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_031924_1_1add9d80-7bb2-4a18-bc53-b8a1079266e7.png?v=1790789615",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_031217_4173d011-b7db-4ee1-bfc4-393e0dea15e3.png?v=1790789615",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_172904_1_28f22e14-5f94-4f77-aa25-fe2e9f23c12f.png?v=1790789615",
+        "size_chart"
+      ],
+      "description": [
+        "Sunflower embroidered shirt with eight hand-stitched sunflowers hanging from the neckline on thin green stems, like a necklace you never take off. Hand embroidered on a heavyweight 220 GSM cotton oversized tee, not printed and not machine embroidered.",
+        "",
+        "What it is",
+        "Sunflower Necklace is a garland of eight sunflowers strung from shoulder to shoulder around the collar, each one tilted at its own angle. Every flower is stitched by hand by our women artisans in Bulandshahr, India, so you can see and feel the raised petals.",
+        "",
+        "Choose white for a soft, sunny look, or black to make the yellow petals glow.",
+        "",
+        "Details",
+        "• Embroidery: looped lazy daisy petals in golden yellow, basket-weave brown centres, olive-green stem-stitch stems with small looped leaves",
+        "• Placement: around the neckline, shoulder to shoulder",
+        "• Fabric: 220 GSM heavyweight cotton",
+        "• Fit: oversized, drop shoulder, unisex crew neck",
+        "• Colours: white or black",
+        "• Sizes: XS to XXL (size chart in the photos)",
+        "",
+        "Sizing",
+        "Order your usual size for the relaxed oversized fit, or one size down for a closer, regular fit.",
+        "",
+        "Made to order",
+        "Your tee is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Hand wash cold and inside out. Dry flat in the shade. Never iron directly over the petals.",
+        "",
+        "Why hand embroidery",
+        "A print fades and a machine repeats itself. Each sunflower here is stitched one by one, so no two shirts are exactly alike.",
+        "",
+        "A happy gift for sunflower lovers, gardeners, and anyone who likes their florals with a little texture."
+      ],
+      "notes": []
+    },
+    {
+      "key": "apple",
+      "shopify_id": "gid://shopify/Product/15404327960761",
+      "shopify_title": "Apple Hand-Embroidered Oversized T-Shirt, Black",
+      "title": "Apple Teacher Shirt, Hand Embroidered Apple Tee with Worm, Cute Fruit T-Shirt, Oversized Black Teacher Gift",
+      "price_usd": 39,
+      "category": "tee",
+      "variations": {
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "attributes": {
+        "Primary color": "Black",
+        "Secondary color": "Purple",
+        "Sleeve length": "Short sleeve",
+        "Neckline": "Crew neck",
+        "Material": "Cotton",
+        "Style": "Minimalist"
+      },
+      "tags": [
+        "apple teacher shirt",
+        "teacher gift",
+        "teacher appreciation",
+        "cute teacher shirt",
+        "fall teacher shirt",
+        "gift from student",
+        "teacher christmas",
+        "apple shirt",
+        "apple t-shirt",
+        "embroidered apple",
+        "kindergarten teacher",
+        "hand embroidered tee",
+        "embroidered shirt"
+      ],
+      "materials": [
+        "cotton",
+        "embroidery thread"
+      ],
+      "photos": [
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260928_172747_e59e414e-b33a-4e92-92bb-2a6e3d5e6616_1.png?v=1790788868",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_172938_4f48f1fe-859d-420d-80d4-6d21596b8572_1.png?v=1790788739",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260928_174728_df432397-adad-4de3-bcb1-6564dff96d1b.png?v=1790788899",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260928_174644_2539676c-1e33-4960-93da-4b9539b747a4.png?v=1790788948",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_173131_3847c63a-f3c4-4d45-9488-011ddcad17b1.png?v=1790788740",
+        "size_chart"
+      ],
+      "description": [
+        "Apple teacher shirt, hand embroidered: one small apple stitched on the chest of a black 220 GSM cotton oversized tee, with a lilac worm poking out of its side. A perfect apple would be boring. This one has a guest.",
+        "",
+        "What it is",
+        "A small apple centred just below the collar, filled with rows of short straight stitches in sage, apricot, cream and honey so it looks almost woven. The worm is worked in chunky lilac chain stitch, raised enough to feel. Hand embroidered by our women artisans in Bulandshahr, India, not printed and not machine embroidered.",
+        "",
+        "Details",
+        "• Embroidery: textured straight-stitch apple, brown stem, raised lilac chain-stitch worm",
+        "• Placement: small and centred on the chest",
+        "• Fabric: 220 GSM heavyweight cotton",
+        "• Fit: oversized, drop shoulder, ribbed crew neck, unisex",
+        "• Colour: black",
+        "• Sizes: XS to XXL (size chart in the photos)",
+        "",
+        "Sizing",
+        "Order your usual size for the relaxed oversized fit, or one size down for a closer, regular fit.",
+        "",
+        "Made to order",
+        "Your tee is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Hand wash cold and inside out. Dry flat in the shade. Never iron over the embroidery.",
+        "",
+        "Why hand embroidery",
+        "A print fades and a machine repeats itself. This apple is stitched row by row, so no two shirts are exactly alike.",
+        "",
+        "A fun teacher gift from students and parents, and a good one for gardeners, fruit lovers, or anyone who has ever found a worm in their apple."
+      ],
+      "notes": [
+        "Positioned as a teacher gift: on Etsy, 'embroidered apple shirt' is mostly kids' back-to-school wear, while 'apple teacher shirt' is the adult search (used as a tag by all 30 of the top 30 results)."
+      ]
+    },
+    {
+      "key": "octopus",
+      "shopify_id": "gid://shopify/Product/15403951915193",
+      "shopify_title": "Octopus Hand-Embroidered Oversized T-Shirt",
+      "title": "Octopus Embroidered Shirt, Hand Embroidered Octopus T-Shirt, Back Embroidery Ocean Tee, Oversized Sea Creature Gift",
+      "price_usd": 54,
+      "category": "tee",
+      "variations": {
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "Primary color": [
+          "White",
+          "Black"
+        ]
+      },
+      "attributes": {
+        "Secondary color": "Purple",
+        "Sleeve length": "Short sleeve",
+        "Neckline": "Crew neck",
+        "Material": "Cotton",
+        "Pattern": "Animal print",
+        "Style": "Boho & hippie"
+      },
+      "tags": [
+        "octopus shirt",
+        "octopus t-shirt",
+        "embroidered octopus",
+        "octopus gift",
+        "ocean lover gift",
+        "sea creature shirt",
+        "marine life tee",
+        "sea life shirt",
+        "nautical shirt",
+        "embroidered tee",
+        "back embroidery",
+        "hand embroidered tee",
+        "embroidered shirt"
+      ],
+      "materials": [
+        "cotton",
+        "embroidery thread"
+      ],
+      "photos": [
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260927_082455_d369b777-617e-4508-80f0-f66f6cf2cacc_1.png?v=1790788356",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_174644_34be0277-f7d8-4b2b-955d-6f0736a9799e_1.png?v=1790788357",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_174744_b4302cbe-43f0-493e-a363-35fd91948f5f.png?v=1790788357",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260927_082713_66319c56-c629-43c7-b779-ae149e645ba4.png?v=1790788356",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260927_082207_89e9e542-c4c1-46b4-b456-aecba721a683.png?v=1790788356",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260929_174338_485609f4-97f1-4032-9f94-d8944212c5f0.png?v=1790788357",
+        "size_chart"
+      ],
+      "description": [
+        "Octopus embroidered shirt with one big, curling octopus hand stitched across the back of a 220 GSM cotton oversized tee. Eight tentacles, each lined with raised coral French knot suckers. Not a print, not a patch.",
+        "",
+        "What it is",
+        "A large back embroidery: the octopus spreads across the back and its tentacles curl out toward both shoulders. Every stitch is worked by hand by our women artisans in Bulandshahr, India, including dozens of French knots you can feel with your fingers.",
+        "",
+        "Soft on white, glowing on black.",
+        "",
+        "Details",
+        "• Embroidery: kantha-style running-stitch fill in lilac, sky blue and violet, a deep purple chain-stitch outline, coral French knot suckers",
+        "• Placement: large design on the back",
+        "• Fabric: 220 GSM heavyweight cotton",
+        "• Fit: oversized, drop shoulder, unisex crew neck",
+        "• Colours: white or black",
+        "• Sizes: XS to XXL (size chart in the photos)",
+        "",
+        "Sizing",
+        "Order your usual size for the relaxed oversized fit, or one size down for a closer, regular fit.",
+        "",
+        "Made to order",
+        "Your tee is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Wash cold and inside out to protect the French knots. Dry flat in the shade. Never iron directly over the embroidery.",
+        "",
+        "Why hand embroidery",
+        "A print fades and a machine repeats itself. This octopus is stitched knot by knot, so no two shirts are exactly alike.",
+        "",
+        "A gift for ocean lovers, divers, marine biology fans, and anyone who would rather be at the aquarium."
+      ],
+      "notes": [
+        "Priced above your other tees because it is a large back piece; most octopus shirts on Etsy are small machine-embroidered chest designs around $27 to $32."
+      ]
+    },
+    {
+      "key": "taanka-kantha",
+      "shopify_id": "gid://shopify/Product/15403389714617",
+      "shopify_title": "Taanka Kantha Hand-Embroidered Oversized T-Shirt, White",
+      "title": "Kantha Stitch T-Shirt, Hand Embroidered White Tee, Minimalist Running Stitch Top, Oversized Cotton Boho Shirt, Slow Fashion",
+      "price_usd": 44,
+      "category": "tee",
+      "variations": {
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "attributes": {
+        "Primary color": "White",
+        "Secondary color": "Blue",
+        "Sleeve length": "Short sleeve",
+        "Neckline": "Crew neck",
+        "Material": "Cotton",
+        "Pattern": "Striped",
+        "Style": "Minimalist"
+      },
+      "tags": [
+        "kantha embroidery",
+        "kantha stitch",
+        "kantha shirt",
+        "hand embroidered tee",
+        "running stitch",
+        "boho embroidered top",
+        "minimalist tee",
+        "embroidered t-shirt",
+        "slow fashion",
+        "sustainable fashion",
+        "indian embroidery",
+        "embroidered shirt",
+        "oversized t-shirt"
+      ],
+      "materials": [
+        "cotton",
+        "embroidery thread"
+      ],
+      "photos": [
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260927_085118_798c7893-ec7b-40e0-8213-411fbb868d48.png?v=1790788595",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260927_085312_cb218e29-00c6-494c-9bf2-c33dffafd5f9.png?v=1790788627",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260923_164006_8fe1b891-6344-4db5-b992-69a8c5b1a06f_1.png?v=1790788516",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260927_085537_e4612992-e336-45e1-9fbf-00d76dc153bd.png?v=1790788655",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260923_164931_a21e9748-7d7e-4557-bc07-d5cacfc80c7e.png?v=1790788516",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/share_image_87_new_1763869052130_8766_2bf27e0b-e914-4e0f-8782-f465e8f60f10.jpg?v=1772471768"
+      ],
+      "description": [
+        "Kantha stitch t-shirt where the stitches are the design: rows of hand running stitch across the chest of a white 220 GSM cotton oversized tee, a warm brown herringbone band, and a blanket-stitched collar. We call it Taanka, Hindi for a single stitch.",
+        "",
+        "What it is",
+        "A minimalist tee built from three classic hand stitches, made by our women artisans in Bulandshahr, India:",
+        "• Kantha running stitch: blue and brick-red dashes around a solid navy line",
+        "• Herringbone band: chunky crossed stitches in warm brown, like a woven border",
+        "• Blanket-stitched collar: light blue spokes all around the neckline",
+        "",
+        "What is kantha?",
+        "A running-stitch embroidery tradition from Bengal, first used to layer old saris into quilts. Its signature is the plain dashed line.",
+        "",
+        "Details",
+        "• Fabric: 220 GSM heavyweight cotton, less see-through than a thin white tee",
+        "• Fit: oversized, drop shoulder, unisex crew neck",
+        "• Colour: white",
+        "• Sizes: XS to XXL (size chart in the photos)",
+        "",
+        "Sizing",
+        "Order your usual size for the relaxed oversized fit, or one size down for a closer, regular fit.",
+        "",
+        "Made to order",
+        "Your tee is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Wash cold and dry flat. Keep the iron off the embroidery.",
+        "",
+        "Why hand embroidery",
+        "A print fades and a machine repeats itself. Every dash here is a single stitch made by hand, so no two shirts are exactly alike.",
+        "",
+        "A quiet, textured basic for anyone who loves slow fashion, visible stitching and handmade details."
+      ],
+      "notes": [
+        "Leads with 'Kantha Stitch T-Shirt' instead of 'Taanka': shoppers search kantha, not the product name. Kantha results on Etsy are mostly jackets around $60, so there is little direct competition for a kantha tee."
+      ]
+    },
+    {
+      "key": "neelbel",
+      "shopify_id": "gid://shopify/Product/15403383554233",
+      "shopify_title": "Neelbel Hand-Embroidered Blue Floral Oversized T-Shirt, Black",
+      "title": "Floral Embroidered Shirt, Hand Embroidered Blue Flower Vine Tee, Black Oversized Cotton T-Shirt, Botanical Gift for Her",
+      "price_usd": 44,
+      "category": "tee",
+      "variations": {
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      },
+      "attributes": {
+        "Primary color": "Black",
+        "Secondary color": "Blue",
+        "Sleeve length": "Short sleeve",
+        "Neckline": "Crew neck",
+        "Material": "Cotton",
+        "Pattern": "Floral",
+        "Style": "Cottagecore"
+      },
+      "tags": [
+        "floral embroidered",
+        "floral embroidery",
+        "blue floral shirt",
+        "floral shirt",
+        "embroidered flowers",
+        "flower shirt",
+        "hand embroidered tee",
+        "embroidered tee",
+        "cottagecore shirt",
+        "botanical shirt",
+        "nature lover gift",
+        "embroidered shirt",
+        "gift for her"
+      ],
+      "materials": [
+        "cotton",
+        "embroidery thread"
+      ],
+      "photos": [],
+      "description": [
+        "Floral embroidered shirt with two mirrored vines of blue flowers climbing the front of a black 220 GSM cotton oversized tee. Hand embroidered petal by petal, not printed. We call it Neelbel: neel means blue in Hindi and bel means vine.",
+        "",
+        "What it is",
+        "Four blue flowers on two curling vines, running from the collarbone down the chest. Every petal is stitched by hand by our women artisans in Bulandshahr, India.",
+        "",
+        "Details",
+        "• Embroidery: cobalt-to-sky-blue petals in long-and-short stitch, yellow French knot centres, chain-stitch stems that curl into spirals",
+        "• Placement: front, from the collarbone down the chest",
+        "• Fabric: 220 GSM heavyweight cotton, heavy enough to carry the embroidery without dragging",
+        "• Fit: oversized, drop shoulder, unisex. A black oversized t-shirt for women or a relaxed fit for men",
+        "• Colour: black",
+        "• Sizes: XS to XXL (size chart in the photos)",
+        "",
+        "Sizing",
+        "Order your usual size for the relaxed oversized fit, or one size down for a closer, regular fit.",
+        "",
+        "Made to order",
+        "Your tee is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Hand wash cold. Iron inside out, never over the stitching.",
+        "",
+        "Why hand embroidery",
+        "A print fades and a machine repeats itself. Each flower here is stitched by hand, so no two shirts are exactly alike.",
+        "",
+        "A botanical gift for flower lovers, gardeners, and anyone who wants florals that feel as good as they look."
+      ],
+      "notes": [
+        "Shopify has no photos for this product. Etsy needs at least one photo before the listing can be published, so add photos to the draft.",
+        "Check for a duplicate: your live Etsy listing 'Hand Embroidered Floral Vine Tee, Oversized Cotton Top, Azure Bloom Design' (etsy.com/listing/4575192244) is also blue flowers and vines on an oversized tee. If it is the same design, put this title and these tags on that listing instead of creating a second one."
+      ]
+    },
+    {
+      "key": "kanak-wheat",
+      "shopify_id": "gid://shopify/Product/15403354816697",
+      "shopify_title": "Kanak Hand-Embroidered Wheat Oversized T-Shirt, 220 GSM",
+      "title": "Wheat Embroidered Shirt, Hand Embroidered Harvest Tee, Fall Botanical T-Shirt, Oversized Cotton Autumn Top, Thanksgiving Gift",
+      "price_usd": 46,
+      "category": "tee",
+      "variations": {
+        "Size": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ],
+        "Primary color": [
+          "White",
+          "Black"
+        ]
+      },
+      "attributes": {
+        "Secondary color": "Gold",
+        "Sleeve length": "Short sleeve",
+        "Neckline": "Crew neck",
+        "Material": "Cotton",
+        "Pattern": "Floral",
+        "Holiday": "Thanksgiving",
+        "Style": "Cottagecore"
+      },
+      "tags": [
+        "wheat embroidery",
+        "wheat shirt",
+        "harvest shirt",
+        "fall embroidered",
+        "fall shirt",
+        "thanksgiving shirt",
+        "autumn outfit",
+        "cottagecore fall",
+        "botanical shirt",
+        "farmhouse shirt",
+        "fall aesthetic",
+        "hand embroidered tee",
+        "embroidered shirt"
+      ],
+      "materials": [
+        "cotton",
+        "embroidery thread"
+      ],
+      "photos": [
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260921_175057_8eb59404-d38c-4510-99fc-e49a2b23dfbd.png?v=1790702282",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260922_033814_612c9173-31e8-4cf4-bf05-d6403e0ee4d8.png?v=1790702281",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260922_033927_2027a636-beaf-4171-9e51-4ff63120c40d.png?v=1790702281",
+        "size_chart"
+      ],
+      "description": [
+        "Wheat embroidered shirt with golden wheat sprigs hand stitched across a 220 GSM cotton oversized tee, fading from mustard to cream at every tip. We call it Kanak: wheat in Punjabi, gold in Hindi.",
+        "",
+        "What it is",
+        "Four clusters of wheat run from the neckline across the shoulders and chest, a harvest botanical that carries you from early autumn through Thanksgiving and beyond. Each one is stitched by hand by our women artisans in Bulandshahr, India.",
+        "",
+        "White for a bright look, black for a richer one.",
+        "",
+        "Details",
+        "• Embroidery: fishbone-stitched grain heads, twisted stem-stitch stalks, mustard French knots",
+        "• Placement: neckline, shoulders and chest",
+        "• Fabric: 220 GSM heavyweight cotton that keeps its boxy shape",
+        "• Fit: oversized, drop shoulder, unisex crew neck",
+        "• Colours: white or black",
+        "• Sizes: XS to XXL (size chart in the photos)",
+        "",
+        "Sizing",
+        "Order your usual size for the relaxed oversized fit, or one size down for a closer, regular fit.",
+        "",
+        "Made to order",
+        "Your tee is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Hand wash cold and inside out. Dry flat in the shade. Never iron over the embroidery.",
+        "",
+        "Why hand embroidery",
+        "A print fades and a machine repeats itself. Every grain here is stitched by hand, so no two shirts are exactly alike.",
+        "",
+        "A warm gift for bakers, farmers, gardeners, and anyone who loves the golden end of the year."
+      ],
+      "notes": [
+        "Fall, harvest and Thanksgiving terms are timely for October and November. After Thanksgiving, swap 'thanksgiving shirt' and 'fall shirt' for evergreen tags such as 'wheat t-shirt' and 'baker gift'."
+      ]
+    },
+    {
+      "key": "amaltas-cap",
+      "shopify_id": "gid://shopify/Product/8714519052473",
+      "shopify_title": "Amaltas Hand-Embroidered Cap, Acid-Wash Denim",
+      "title": "Floral Embroidered Hat, Hand Embroidered Yellow Flower Denim Cap, Acid Wash Baseball Cap, Garden Lover Gift for Her",
+      "price_usd": 32,
+      "category": "cap",
+      "variations": {},
+      "attributes": {
+        "Primary color": "Gray",
+        "Secondary color": "Yellow",
+        "Material": "Denim",
+        "Size": "One size (adjustable)",
+        "Style": "Cottagecore"
+      },
+      "tags": [
+        "embroidered hat",
+        "floral embroidered",
+        "denim hat",
+        "floral baseball cap",
+        "embroidered cap",
+        "wildflower hat",
+        "flower hat",
+        "cottagecore hat",
+        "gift for mom",
+        "botanical cap",
+        "dad hat",
+        "garden lover gift",
+        "gift for her"
+      ],
+      "materials": [
+        "denim",
+        "embroidery thread"
+      ],
+      "photos": [
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260904_073229_5ed8628c-2f3c-4891-85a1-9406a467cb26.png?v=1789492973",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260904_073825_fd7d0595-933f-4583-866b-846f52fa13b9.png?v=1789492922",
+        "https://cdn.shopify.com/s/files/1/0649/3283/9609/files/hf_20260904_073400_b406e688-be52-4bae-b621-3afd7bbc15c2.png?v=1789492922"
+      ],
+      "description": [
+        "Floral embroidered hat with sprays of small yellow blossoms hand stitched down the crown of a charcoal acid-wash denim cap, falling the way amaltas (the golden shower tree) drops its flowers in May.",
+        "",
+        "What it is",
+        "Each flower is a cluster of detached chain-stitch petals with a rust-orange French knot at the centre. The stems are green chain stitch with small pointed leaves, and closed buds sit between the open blooms, so the spray reads as a real branch rather than a repeated motif.",
+        "",
+        "The sprays run straight over the panel seams. A machine cannot do that on a finished cap: the hoop has to come off and the needle has to cross the join by hand, which is why the flowers flow across the front instead of stopping at each seam.",
+        "",
+        "Details",
+        "• Cap: charcoal acid-wash denim, six panel, curved peak",
+        "• Embroidery: yellow blossom sprays across the crown and front panels; detached chain petals, French knot centres, chain-stitch stems",
+        "• Size: adjustable back, one size fits most",
+        "• Hand embroidered by our artisans in Bulandshahr, India",
+        "",
+        "Made to order",
+        "Your cap is hand embroidered after you order (about 7 to 10 days), then shipped with tracking.",
+        "",
+        "Care",
+        "Hand wash cold. Do not wring the embroidered panels. Air dry out of direct sun. Iron on the reverse only and keep the plate off the stitches.",
+        "",
+        "A sunny gift for gardeners, flower lovers, and anyone who wants a cap nobody else has."
+      ],
+      "notes": [
+        "Priced a little above your other caps ($29) because it is hand stitched across the seams; floral embroidered caps on Etsy cluster around $29 to $41."
+      ]
+    }
+  ]
+}
