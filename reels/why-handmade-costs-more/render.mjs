@@ -1,6 +1,7 @@
 // Render the reel with headless Chromium.
 //   node render.mjs stills 1.2,4.8,...   -> build/still-<t>.png
-//   node render.mjs video                -> build/video.mp4 (silent) + build/cues.json
+//   node render.mjs video                -> build/seg*.mp4 (silent) + build/cues.json
+//   SCALE=2 node render.mjs video        -> build/x2/seg*.mp4, a 2160x3840 master
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -8,14 +9,15 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const out = path.join(here, 'build');
+const SCALE = Number(process.env.SCALE || 1);
+const out = path.join(here, 'build', SCALE === 1 ? '' : `x${SCALE}`);
 mkdirSync(out, { recursive: true });
 const FPS = 30, WORKERS = 4;
 const [mode = 'video', arg] = process.argv.slice(2);
 
 const browser = await chromium.launch();
 async function openPage() {
-  const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
+  const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: SCALE });
   page.on('pageerror', e => { console.error('page error:', e.message); process.exitCode = 1; });
   await page.goto('file://' + path.join(here, 'reel.html'));
   await page.waitForFunction(() => window.READY === true);
@@ -40,7 +42,7 @@ if (mode === 'stills') {
     const page = w === 0 ? first : await openPage();
     const a = w * per, b = Math.min(total, a + per);
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-',
-      '-c:v', 'libx264', '-preset', 'medium', '-crf', '14', '-pix_fmt', 'yuv420p', path.join(out, `seg${w}.mp4`)], { stdio: ['pipe', 'inherit', 'inherit'] });
+      '-c:v', 'libx264', '-preset', 'medium', '-crf', SCALE === 1 ? '14' : '16', '-pix_fmt', 'yuv420p', path.join(out, `seg${w}.mp4`)], { stdio: ['pipe', 'inherit', 'inherit'] });
     const done = new Promise((res, rej) => ff.on('close', c => (c === 0 ? res() : rej(new Error('ffmpeg ' + c)))));
     for (let f = a; f < b; f++) {
       await page.evaluate(t => window.seek(t), f / FPS);

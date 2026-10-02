@@ -4,8 +4,8 @@ A 9:16 motion-graphics reel for Vee Threads that explains why hand-embroidered c
 
 | | |
 |---|---|
-| **File** | `why-handmade-costs-more.mp4` |
-| **Format** | 1080×1920, 30 fps, H.264 + AAC 48 kHz stereo, 36.0 s |
+| **Files** | `why-handmade-costs-more.mp4` (1080×1920, post this one) · `why-handmade-costs-more-4k.mp4` (2160×3840 master) |
+| **Format** | 30 fps, H.264 + AAC 48 kHz stereo, 36.0 s |
 | **Loudness** | −14 LUFS integrated, −1.5 dBTP (the level Instagram and TikTok play at) |
 | **Captions** | Burned in and animated. Also in `why-handmade-costs-more.srt` for upload |
 | **Cover** | `cover.png` ("You're paying for her time.") |
@@ -40,6 +40,6 @@ Every part is generated locally. There is no stock footage, stock music or paid 
 - `audio.py` writes a piano-and-pad score in D major (a B-minor drone under the machine opening). It adds sound design on the exported cues: conveyor clacks, counter ticks, stitch pulls, machine hum, clock ticks for the years, pentatonic coin chimes, then thread pull, knot and snip. The music ducks under the voice.
 - `mux.py` joins the video and audio and runs a two-pass loudness normalisation.
 
-To rebuild, run `KOKORO_DIR=/path/to/kokoro-models ./make.sh`. To preview frames, run `node render.mjs stills 4.9,19.6,30.8`; the PNGs land in `build/`.
+To rebuild, run `KOKORO_DIR=/path/to/kokoro-models ./make.sh`. For the 4K master, run `SCALE=2 node render.mjs video && python3 mux.py build/x2 why-handmade-costs-more-4k.mp4`. To preview frames, run `node render.mjs stills 4.9,19.6,30.8`; the PNGs land in `build/`.
 
 Fonts are Montserrat and Playfair Display, both under the SIL Open Font License (see `assets/fonts/`).
