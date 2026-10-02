@@ -1,0 +1,5 @@
+__pycache__/
+output/*.log
+output/preview_*.png
+output/.*_video.mp4
+output/*.wav
