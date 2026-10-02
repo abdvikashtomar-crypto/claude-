@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light dark;
+  --bg: var(--color-background-primary, #ffffff);
+  --bg-soft: var(--color-background-secondary, #f4f4f5);
+  --text: var(--color-text-primary, #18181b);
+  --muted: var(--color-text-secondary, #5f5f68);
+  --border: var(--color-border-primary, #e4e4e7);
+  --danger: var(--color-text-danger, #b42318);
+  --danger-bg: var(--color-background-danger, #fef3f2);
+  --warn: var(--color-text-warning, #93370d);
+  --warn-bg: var(--color-background-warning, #fffaeb);
+  --radius: var(--border-radius-lg, 12px);
+  --font: var(--font-sans, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif);
+}
+[data-theme="dark"] {
+  --bg: var(--color-background-primary, #212121);
+  --bg-soft: var(--color-background-secondary, #2f2f2f);
+  --text: var(--color-text-primary, #ececec);
+  --muted: var(--color-text-secondary, #b4b4b4);
+  --border: var(--color-border-primary, #3f3f46);
+  --danger: var(--color-text-danger, #fda29b);
+  --danger-bg: var(--color-background-danger, #3b1715);
+  --warn: var(--color-text-warning, #fec84b);
+  --warn-bg: var(--color-background-warning, #3a2a0a);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 var(--font); }
+main { padding: 16px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; }
+button {
+  font: inherit; font-size: 13px; color: var(--text); background: var(--bg-soft);
+  border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; cursor: pointer;
+}
+button:hover { border-color: var(--muted); }
+button:focus-visible { outline: 2px solid var(--color-ring-primary, #2563eb); outline-offset: 2px; }
+button.primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.muted { color: var(--muted); }
+.notice { border-radius: 8px; padding: 8px 12px; margin-top: 12px; font-size: 13px; }
+.notice.warn { background: var(--warn-bg); color: var(--warn); }
+.notice.error { background: var(--danger-bg); color: var(--danger); white-space: pre-wrap; }
+.status { min-height: 1.4em; font-size: 12px; color: var(--muted); margin-top: 8px; }
+.empty { padding: 32px 16px; text-align: center; color: var(--muted); }
+[hidden] { display: none !important; }

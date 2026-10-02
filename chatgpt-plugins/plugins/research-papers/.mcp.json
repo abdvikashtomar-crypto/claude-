@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "research-papers": {
+      "type": "http",
+      "url": "https://YOUR-SERVER.example.com/research/mcp"
+    }
+  }
+}

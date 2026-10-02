@@ -1,0 +1,47 @@
+{
+  "name": "qr-code",
+  "version": "1.0.0",
+  "description": "Create real, scannable QR codes for links, Wi-Fi logins, contact cards, emails, texts, phone numbers and map locations, with custom colours and labels, downloadable as PNG or SVG.",
+  "author": {
+    "name": "Vee Threads",
+    "url": "https://veethreads.com"
+  },
+  "homepage": "https://veethreads.com",
+  "license": "MIT",
+  "keywords": [
+    "qr code",
+    "qr code generator",
+    "wifi qr code",
+    "vcard",
+    "contact card",
+    "barcode",
+    "menu qr code",
+    "png",
+    "svg"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "QR Code Generator",
+    "shortDescription": "Scannable QR codes in seconds",
+    "longDescription": "Make QR codes that actually scan. Describe what you need, such as a link to your menu, your café's Wi-Fi password, a contact card for your business card, a pre-filled email or text, a phone number or a map location, and get a crisp QR code with a print-ready PNG or SVG download. Add a caption like \"Scan for our menu\", pick brand colours, and choose higher error correction for codes printed on fabric, packaging or small labels. Warnings flag colour choices that phone cameras struggle to read.",
+    "category": "Productivity",
+    "capabilities": [
+      "Create QR codes",
+      "Wi-Fi and contact cards",
+      "Export PNG/SVG"
+    ],
+    "brandColor": "#5B21B6",
+    "brandColorDark": "#C4B5FD",
+    "defaultPrompt": [
+      "Make a QR code for https://veethreads.com with the caption \"Shop handmade\".",
+      "Create a Wi-Fi QR code for network CafeGuest, password latte2026.",
+      "Make a contact card QR code for Ada Lovelace, ada@example.com, +44 20 7946 0000."
+    ],
+    "developerName": "Vee Threads",
+    "websiteURL": "https://veethreads.com",
+    "privacyPolicyURL": "https://veethreads.com/pages/chatgpt-plugins-privacy",
+    "termsOfServiceURL": "https://veethreads.com/pages/chatgpt-plugins-terms",
+    "supportURL": "https://veethreads.com/pages/contact",
+    "logo": "./assets/logo.png"
+  }
+}

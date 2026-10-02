@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "diagrams": {
+      "type": "http",
+      "url": "https://YOUR-SERVER.example.com/diagrams/mcp"
+    }
+  }
+}

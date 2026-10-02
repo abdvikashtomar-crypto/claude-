@@ -1,5 +1,7 @@
 # Thread Color Finder – DMC Floss Matcher by Vee Threads
 
+> **Also in this repo:** [`chatgpt-plugins/`](chatgpt-plugins/README.md) holds three ChatGPT plugins (Research Papers, Diagrams, QR Code Generator), chosen from GPT Store and plugin usage data, with deploy and Plugin Directory submission steps.
+
 A Chrome extension for embroiderers. It matches any colour on screen, or any photo, to the closest **DMC embroidery floss** numbers. It is published by [Vee Threads](https://veethreads.com) to earn a Chrome Web Store listing that links back to veethreads.com, and to send embroidery fans to the site.
 
 ![Screenshot](store/screenshot-1.png)

@@ -1,0 +1,48 @@
+{
+  "name": "research-papers",
+  "version": "1.0.0",
+  "description": "Find real research papers and cite them correctly. Search 250M+ scholarly works with DOIs, abstracts, citation counts and free full-text links, then format references in APA, MLA, Chicago, Harvard, IEEE or BibTeX.",
+  "author": {
+    "name": "Vee Threads",
+    "url": "https://veethreads.com"
+  },
+  "homepage": "https://veethreads.com",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "papers",
+    "citations",
+    "scholar",
+    "academic",
+    "bibliography",
+    "apa",
+    "mla",
+    "bibtex",
+    "literature review"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Research Papers",
+    "shortDescription": "Find real papers and cite them",
+    "longDescription": "Search over 250 million scholarly works and get real, verifiable papers instead of invented references. Each result includes its DOI, authors, journal, year, citation count, abstract and, when available, a free full-text link. When you need a bibliography, the plugin formats it from the official metadata in APA 7, MLA 9, Chicago, Harvard, IEEE or BibTeX. It's built for students, researchers, journalists and anyone checking what the evidence says. Data comes from OpenAlex, an open index of the world's research.",
+    "category": "Education",
+    "capabilities": [
+      "Search papers",
+      "Verify references",
+      "Format citations"
+    ],
+    "brandColor": "#1F3A5F",
+    "brandColorDark": "#9DB8DD",
+    "defaultPrompt": [
+      "Find the most cited papers on intermittent fasting and weight loss since 2018.",
+      "What does recent research say about microplastics in drinking water? Cite your sources in APA.",
+      "Turn these DOIs into a BibTeX bibliography: 10.1126/science.1225829, 10.1038/nature14539"
+    ],
+    "developerName": "Vee Threads",
+    "websiteURL": "https://veethreads.com",
+    "privacyPolicyURL": "https://veethreads.com/pages/chatgpt-plugins-privacy",
+    "termsOfServiceURL": "https://veethreads.com/pages/chatgpt-plugins-terms",
+    "supportURL": "https://veethreads.com/pages/contact",
+    "logo": "./assets/logo.png"
+  }
+}

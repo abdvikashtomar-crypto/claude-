@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diagram</title>
+<style>
+/* BASE_CSS */
+header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+h1 { font-size: 16px; margin: 0; }
+.type { font-size: 12px; }
+.paper { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; overflow: auto; max-height: 70vh; text-align: center; }
+.paper.dark { background: #1e1e1e; }
+.paper svg { max-width: 100%; height: auto; }
+body.fullscreen .paper { max-height: none; }
+.toolbar { margin-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1 id="title">Diagram</h1>
+    <span class="type muted" id="type"></span>
+  </header>
+  <div class="paper" id="paper"><div class="empty" id="waiting">Drawing diagram…</div></div>
+  <div class="notice error" id="error" hidden></div>
+  <div class="toolbar" id="toolbar" hidden>
+    <button class="primary" id="download-png">Download PNG</button>
+    <button id="download-svg">Download SVG</button>
+    <button id="copy">Copy Mermaid code</button>
+    <button id="edit">Edit in Mermaid Live</button>
+    <button id="fullscreen" hidden>Full screen</button>
+  </div>
+  <div class="toolbar" id="fix-bar" hidden>
+    <button class="primary" id="fix">Ask ChatGPT to fix it</button>
+    <button id="copy-broken">Copy Mermaid code</button>
+  </div>
+  <div class="status" id="status" aria-live="polite"></div>
+</main>
+<!-- MCP_APPS_SDK -->
+<script type="module">
+/* BASE_JS */
+
+const $ = (id) => document.getElementById(id);
+let current = null;
+let lastError = "";
+let renderCount = 0;
+
+const mermaidReady = new Promise((resolve, reject) => {
+  const script = Object.assign(document.createElement("script"), { src: "{{MERMAID_URL}}" });
+  script.onload = () => resolve(globalThis.mermaid);
+  script.onerror = () => reject(new Error("Could not load the Mermaid renderer."));
+  document.head.append(script);
+});
+
+async function draw(data, app) {
+  current = data;
+  $("title").textContent = data.title;
+  $("type").textContent = data.diagram_type;
+  $("error").hidden = true;
+  $("fix-bar").hidden = true;
+  $("toolbar").hidden = true;
+  $("paper").classList.toggle("dark", data.theme === "dark");
+  try {
+    const mermaid = await mermaidReady;
+    mermaid.initialize({ startOnLoad: false, securityLevel: "strict", theme: data.theme, htmlLabels: false, flowchart: { htmlLabels: false } });
+    const { svg } = await mermaid.render(`diagram-${++renderCount}`, data.mermaid);
+    $("paper").innerHTML = svg;
+    $("toolbar").hidden = false;
+    lastError = "";
+  } catch (e) {
+    lastError = String(e?.message || e).trim();
+    $("paper").innerHTML = '<div class="empty">This diagram could not be drawn.</div>';
+    $("error").textContent = lastError;
+    $("error").hidden = false;
+    $("fix-bar").hidden = false;
+    document.querySelectorAll('[id^="ddiagram-"], [id^="diagram-"]').forEach((el) => !$("paper").contains(el) && el.remove());
+    if (app.getHostCapabilities()?.updateModelContext) {
+      app.updateModelContext({ content: [{ type: "text", text: `The "${data.title}" diagram failed to render. Mermaid error: ${lastError}` }] }).catch(() => {});
+    }
+  }
+}
+
+function currentSvg() {
+  const svg = $("paper").querySelector("svg");
+  if (!svg) return null;
+  const clone = svg.cloneNode(true);
+  clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  return new XMLSerializer().serializeToString(clone);
+}
+
+const app = await connectWidget("diagram-view", (result, app) => result.structuredContent && draw(result.structuredContent, app));
+const fileBase = () => slugify(current.title, "diagram");
+
+$("download-svg").onclick = action(() => saveFile(app, `${fileBase()}.svg`, "image/svg+xml", { text: currentSvg() }));
+$("download-png").onclick = action(async () => {
+  let png;
+  try {
+    png = await svgToPng(currentSvg(), 3, current.theme === "dark" ? "#1e1e1e" : "#ffffff");
+  } catch {
+    return setStatus("PNG export isn't available for this diagram. Download the SVG or use Mermaid Live instead.");
+  }
+  await saveFile(app, `${fileBase()}.png`, "image/png", { blob: png });
+});
+$("copy").onclick = action(() => copyText(current.mermaid));
+$("copy-broken").onclick = action(() => copyText(current.mermaid));
+$("edit").onclick = action(async () => {
+  const { isError } = await app.openLink({ url: current.edit_url });
+  if (isError) setStatus("Couldn't open Mermaid Live here. Copy the code and paste it at mermaid.live instead.");
+});
+$("fix").onclick = action(async () => {
+  const text = `The "${current.title}" diagram didn't render. Mermaid says:\n${lastError}\nPlease fix the Mermaid code and draw it again.`;
+  const { isError } = await app.sendMessage({ role: "user", content: [{ type: "text", text }] }).catch(() => ({ isError: true }));
+  setStatus(isError ? "Couldn't send the message. Copy the code and ask ChatGPT to fix it." : "Asked ChatGPT to fix the diagram.");
+});
+
+const modes = app.getHostContext()?.availableDisplayModes ?? [];
+if (modes.includes("fullscreen")) {
+  $("fullscreen").hidden = false;
+  $("fullscreen").onclick = action(async () => {
+    const target = document.body.classList.contains("fullscreen") ? "inline" : "fullscreen";
+    const { mode } = await app.requestDisplayMode({ mode: target });
+    document.body.classList.toggle("fullscreen", mode === "fullscreen");
+    $("fullscreen").textContent = mode === "fullscreen" ? "Exit full screen" : "Full screen";
+  });
+}
+</script>
+</body>
+</html>

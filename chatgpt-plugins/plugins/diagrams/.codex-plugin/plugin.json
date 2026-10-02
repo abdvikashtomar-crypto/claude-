@@ -1,0 +1,48 @@
+{
+  "name": "diagrams",
+  "version": "1.0.0",
+  "description": "Turn any idea into a diagram: flowcharts, mind maps, sequence diagrams, timelines, Gantt charts, org charts, ER diagrams and more, rendered from Mermaid with PNG/SVG download and one-click editing.",
+  "author": {
+    "name": "Vee Threads",
+    "url": "https://veethreads.com"
+  },
+  "homepage": "https://veethreads.com",
+  "license": "MIT",
+  "keywords": [
+    "diagram",
+    "flowchart",
+    "mind map",
+    "mermaid",
+    "gantt",
+    "sequence diagram",
+    "org chart",
+    "timeline",
+    "erd",
+    "visualize"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Diagrams",
+    "shortDescription": "Flowcharts, mind maps and more",
+    "longDescription": "Ask for a diagram and see it drawn right in the chat. Diagrams renders flowcharts, process maps, decision trees, mind maps, sequence diagrams, timelines, Gantt charts, org charts, entity-relationship diagrams, class and state diagrams, user journeys, quadrant charts, kanban boards and architecture diagrams. Download any diagram as a high-resolution PNG or a scalable SVG for slides and documents, or open it in the Mermaid Live Editor to fine-tune it. If a diagram has a syntax error, one click asks ChatGPT to fix it.",
+    "category": "Design",
+    "capabilities": [
+      "Render diagrams",
+      "Export PNG/SVG",
+      "Edit in Mermaid Live"
+    ],
+    "brandColor": "#0F766E",
+    "brandColorDark": "#5EEAD4",
+    "defaultPrompt": [
+      "Draw a flowchart of our customer refund process.",
+      "Make a mind map for planning a product launch.",
+      "Create a Gantt chart for a 6-week website redesign."
+    ],
+    "developerName": "Vee Threads",
+    "websiteURL": "https://veethreads.com",
+    "privacyPolicyURL": "https://veethreads.com/pages/chatgpt-plugins-privacy",
+    "termsOfServiceURL": "https://veethreads.com/pages/chatgpt-plugins-terms",
+    "supportURL": "https://veethreads.com/pages/contact",
+    "logo": "./assets/logo.png"
+  }
+}

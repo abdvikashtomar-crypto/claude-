@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Code</title>
+<style>
+/* BASE_CSS */
+main { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; justify-content: center; }
+.code { width: 220px; flex: none; text-align: center; }
+.code .frame { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); line-height: 0; }
+.code svg { width: 100%; height: auto; display: block; }
+.label { margin-top: 8px; font-weight: 600; word-break: break-word; }
+.details { flex: 1 1 220px; min-width: 0; }
+.summary { font-size: 16px; font-weight: 600; margin: 0 0 4px; word-break: break-word; }
+.meta { font-size: 12px; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<main id="app" hidden>
+  <div class="code">
+    <div class="frame" id="qr" role="img"></div>
+    <div class="label" id="label" hidden></div>
+  </div>
+  <div class="details">
+    <p class="summary" id="summary"></p>
+    <div class="meta muted" id="meta"></div>
+    <div class="toolbar">
+      <button class="primary" id="download-png">Download PNG</button>
+      <button id="download-svg">Download SVG</button>
+      <button id="copy">Copy encoded text</button>
+    </div>
+    <div id="warnings"></div>
+    <div class="status" id="status" aria-live="polite"></div>
+  </div>
+</main>
+<div class="empty" id="waiting">Creating QR code…</div>
+<!-- MCP_APPS_SDK -->
+<script type="module">
+/* BASE_JS */
+
+const $ = (id) => document.getElementById(id);
+let current = null;
+
+const KIND_NAMES = { url: "Link", text: "Text", phone: "Phone call", wifi: "Wi-Fi", email: "Email", sms: "Text message", contact: "Contact card", location: "Location" };
+
+function render(result) {
+  const data = result.structuredContent;
+  const view = result._meta;
+  if (!data || !view?.svg) return;
+  current = { data, view };
+  $("waiting").hidden = true;
+  $("app").hidden = false;
+  $("qr").innerHTML = view.svg;
+  $("qr").setAttribute("aria-label", `QR code: ${data.summary}`);
+  $("label").hidden = !view.label;
+  $("label").textContent = view.label;
+  $("summary").textContent = data.summary;
+  $("meta").textContent = `${KIND_NAMES[data.kind] ?? data.kind} · version ${data.version} · error correction ${data.error_correction}`;
+  $("warnings").replaceChildren(...data.warnings.map((w) => Object.assign(document.createElement("div"), { className: "notice warn", textContent: w })));
+}
+
+// PNG with the caption drawn under the code, for printing.
+async function labelledPng() {
+  const { view } = current;
+  if (!view.label) return view.png;
+  const img = new Image();
+  await new Promise((resolve, reject) => {
+    img.onload = resolve;
+    img.onerror = reject;
+    img.src = `data:image/png;base64,${view.png}`;
+  });
+  const size = img.width;
+  const fontSize = Math.round(size / 14);
+  const canvas = Object.assign(document.createElement("canvas"), { width: size, height: size + fontSize * 2 });
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = view.background;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(img, 0, 0);
+  ctx.fillStyle = view.foreground;
+  ctx.font = `600 ${fontSize}px system-ui, sans-serif`;
+  ctx.textAlign = "center";
+  ctx.fillText(view.label, size / 2, size + fontSize * 0.6, size * 0.9);
+  return canvas.toDataURL("image/png").split(",")[1];
+}
+
+const app = await connectWidget("qr-code-view", render);
+const fileBase = () => `qr-${slugify(current.view.label || current.data.summary, current.data.kind)}`;
+$("download-png").onclick = action(async () => saveFile(app, `${fileBase()}.png`, "image/png", { blob: await labelledPng() }));
+$("download-svg").onclick = action(() => saveFile(app, `${fileBase()}.svg`, "image/svg+xml", { text: current.view.svg }));
+$("copy").onclick = action(() => copyText(current.data.encoded));
+</script>
+</body>
+</html>

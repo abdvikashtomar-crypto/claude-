@@ -1,0 +1,30 @@
+{
+  "name": "chatgpt-plugins",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Three ChatGPT plugins (MCP apps): Research Papers, Diagrams and QR Code Generator",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "^2.2.0",
+    "@modelcontextprotocol/ext-apps": "^2.0.3",
+    "@modelcontextprotocol/node": "^2.1.0",
+    "@modelcontextprotocol/server": "^2.2.0",
+    "mermaid": "^12.0.0",
+    "qrcode": "^1.5.4",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "jsqr": "^1.4.0",
+    "playwright": "^1.56.1"
+  },
+  "overrides": {
+    "lodash-es": "^4.18.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "qr-code": {
+      "type": "http",
+      "url": "https://YOUR-SERVER.example.com/qr/mcp"
+    }
+  }
+}

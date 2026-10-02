@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#5b21b6"/>
+  <rect x="80" y="80" width="352" height="352" rx="48" fill="#ffffff"/>
+  <g fill="#111827">
+    <path d="M120 120h112v112H120zM144 144v64h64v-64z" fill-rule="evenodd"/>
+    <path d="M280 120h112v112H280zM304 144v64h64v-64z" fill-rule="evenodd"/>
+    <path d="M120 280h112v112H120zM144 304v64h64v-64z" fill-rule="evenodd"/>
+    <rect x="160" y="160" width="32" height="32"/>
+    <rect x="320" y="160" width="32" height="32"/>
+    <rect x="160" y="320" width="32" height="32"/>
+    <rect x="280" y="280" width="40" height="40"/>
+    <rect x="352" y="280" width="40" height="40"/>
+    <rect x="316" y="316" width="40" height="40"/>
+    <rect x="280" y="352" width="40" height="40"/>
+    <rect x="352" y="352" width="40" height="40"/>
+  </g>
+</svg>
