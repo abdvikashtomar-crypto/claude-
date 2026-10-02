@@ -17,6 +17,21 @@ stereo audio normalised to about −14 LUFS. They're ready to upload to Reels, T
 The frame on either side of each perfect frame is visibly off, so the challenge is real.
 You can pin the answer time in the comments.
 
+## Product editions: hand-embroidered tee
+
+These use the real product photo (`assets/embroidered_tee.webp`), cut out automatically, so the
+actual embroidery is what viewers stare at while they try to pause.
+
+| File | Approach | Perfect frames (time) |
+|---|---|---|
+| `output/05_tee_rack_swing.mp4` | The tee hangs on a hanger that whizzes along a boutique clothing rail, brakes and swings like a pendulum (physically simulated). Pause when it hangs exactly in the red outline | 1.47 s · 4.27 s · 7.07 s |
+| `output/06_tee_puzzle.mp4` | The puzzle picture is the tee. The missing piece is the collar and the centre of the floral garland, and the embroidery only lines up when it fits (it lands upside-down halfway through each loop) | 1.53 s · 4.20 s · 6.87 s |
+| `output/07_tee_spin.mp4` | The tee spins on a dial with near misses. Pause when it's perfectly straight | 2.10 s · 4.77 s · 7.43 s |
+
+To make these with a different product, replace `assets/embroidered_tee.webp` with a photo of a
+dark garment on a white background and re-run `t1_tee_rack_swing.py`, `t2_tee_puzzle.py` or
+`t3_tee_spin.py`.
+
 ## Re-rendering / tweaking
 
 Everything is drawn procedurally and the soundtrack is synthesized, so no stock footage or licensed music is used.

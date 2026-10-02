@@ -239,11 +239,14 @@ def bevel(ctx, r, c):
     ctx.stroke()
 
 
-def build_background():
+def build_background(art=None, hole=None, table=("#2b2f3d", "#0b0c12"), board_xy=None):
+    art = art or ART
+    hole = hole or HOLE
+    bx, by = board_xy or (BX, BY)
     s, ctx = new_surface()
     g = cairo.RadialGradient(W / 2, H * 0.55, 200, W / 2, H * 0.55, H * 0.75)
-    g.add_color_stop_rgb(0, *hexc("#2b2f3d"))
-    g.add_color_stop_rgb(1, *hexc("#0b0c12"))
+    g.add_color_stop_rgb(0, *hexc(table[0]))
+    g.add_color_stop_rgb(1, *hexc(table[1]))
     ctx.set_source(g)
     ctx.paint()
     # wood-ish table grain
@@ -258,15 +261,15 @@ def build_background():
     m = np.zeros((BH + 2, BW + 2), np.float32)
     m[1:-1, 1:-1] = 1
     sh, pad = blurred_shadow(m, 40, alpha=0.75)
-    ctx.set_source_surface(sh, BX - pad + 10, BY - pad + 40)
+    ctx.set_source_surface(sh, bx - pad + 10, by - pad + 40)
     ctx.paint()
     ctx.save()
-    ctx.translate(BX, BY)
-    ctx.set_source_surface(ART)
+    ctx.translate(bx, by)
+    ctx.set_source_surface(art)
     ctx.paint()
     for r in range(ROWS):
         for c in range(COLS):
-            if (r, c) == HOLE:
+            if (r, c) == hole:
                 continue
             ctx.save()
             piece_path(ctx, r, c)
@@ -275,20 +278,20 @@ def build_background():
             ctx.restore()
     # the hole
     ctx.save()
-    piece_path(ctx, *HOLE)
+    piece_path(ctx, *hole)
     ctx.clip()
-    g = cairo.LinearGradient(0, HOLE[0] * P, 0, (HOLE[0] + 1) * P)
+    g = cairo.LinearGradient(0, hole[0] * P, 0, (hole[0] + 1) * P)
     g.add_color_stop_rgb(0, *hexc("#141019"))
     g.add_color_stop_rgb(1, *hexc("#211b29"))
     ctx.set_source(g)
     ctx.paint()
     for w, a in ((90, 0.18), (60, 0.2), (34, 0.25), (14, 0.35)):
-        piece_path(ctx, *HOLE)
+        piece_path(ctx, *hole)
         ctx.set_source_rgba(0, 0, 0, a)
         ctx.set_line_width(w)
         ctx.stroke()
     ctx.restore()
-    piece_path(ctx, *HOLE)
+    piece_path(ctx, *hole)
     ctx.set_source_rgba(1, 1, 1, 0.55)
     ctx.set_line_width(5)
     ctx.stroke()
@@ -297,15 +300,16 @@ def build_background():
     return s
 
 
-def build_piece():
+def build_piece(art=None, hole=None):
     """Sprite of the missing piece, centred; returns (surface, half_size)."""
+    art = art or ART
     S = int(P * 1.8)
     s, ctx = new_surface(S, S)
-    r, c = HOLE
+    r, c = hole or HOLE
     ctx.translate(S / 2 - (c + 0.5) * P, S / 2 - (r + 0.5) * P)
     piece_path(ctx, r, c)
     ctx.clip()
-    ctx.set_source_surface(ART)
+    ctx.set_source_surface(art)
     ctx.paint()
     bevel(ctx, r, c)
     s.flush()
