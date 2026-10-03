@@ -1,0 +1,410 @@
+[
+ {
+  "id": "h1",
+  "dur": 1.5821666666666667,
+  "words": [
+   "Hand",
+   "embroidery",
+   "takes",
+   "hours."
+  ],
+  "weights": [
+   4,
+   10,
+   5,
+   4
+  ]
+ },
+ {
+  "id": "h2",
+  "dur": 1.6451666666666667,
+  "words": [
+   "One",
+   "wrong",
+   "wash",
+   "can",
+   "ruin",
+   "it."
+  ],
+  "weights": [
+   3,
+   3,
+   4,
+   3,
+   5,
+   2
+  ]
+ },
+ {
+  "id": "h3",
+  "dur": 1.4424583333333334,
+  "words": [
+   "Here\u2019s",
+   "how",
+   "to",
+   "wash",
+   "it",
+   "right."
+  ],
+  "weights": [
+   4,
+   3,
+   3,
+   4,
+   2,
+   4
+  ]
+ },
+ {
+  "id": "t1",
+  "dur": 1.3717916666666667,
+  "words": [
+   "First,",
+   "test",
+   "the",
+   "colours."
+  ],
+  "weights": [
+   5,
+   4,
+   2,
+   5
+  ]
+ },
+ {
+  "id": "t2",
+  "dur": 2.2626666666666666,
+  "words": [
+   "Dab",
+   "a",
+   "hidden",
+   "stitch",
+   "with",
+   "a",
+   "damp",
+   "white",
+   "cloth."
+  ],
+  "weights": [
+   3,
+   2,
+   5,
+   5,
+   3,
+   2,
+   4,
+   4,
+   4
+  ]
+ },
+ {
+  "id": "in",
+  "dur": 1.2069583333333334,
+  "words": [
+   "Turn",
+   "it",
+   "inside",
+   "out."
+  ],
+  "weights": [
+   4,
+   2,
+   6,
+   3
+  ]
+ },
+ {
+  "id": "c1",
+  "dur": 1.0865416666666667,
+  "words": [
+   "Use",
+   "cold",
+   "water."
+  ],
+  "weights": [
+   4,
+   5,
+   5
+  ]
+ },
+ {
+  "id": "c2",
+  "dur": 2.0104583333333332,
+  "words": [
+   "Hot",
+   "water",
+   "makes",
+   "threads",
+   "bleed",
+   "and",
+   "shrink."
+  ],
+  "weights": [
+   4,
+   5,
+   5,
+   5,
+   5,
+   3,
+   5
+  ]
+ },
+ {
+  "id": "d1",
+  "dur": 2.053166666666667,
+  "words": [
+   "Add",
+   "a",
+   "few",
+   "drops",
+   "of",
+   "mild",
+   "detergent."
+  ],
+  "weights": [
+   2,
+   2,
+   4,
+   6,
+   2,
+   5,
+   10
+  ]
+ },
+ {
+  "id": "d2",
+  "dur": 0.8336666666666667,
+  "words": [
+   "No",
+   "bleach."
+  ],
+  "weights": [
+   3,
+   6
+  ]
+ },
+ {
+  "id": "g1",
+  "dur": 0.96075,
+  "words": [
+   "Swish",
+   "gently."
+  ],
+  "weights": [
+   4,
+   7
+  ]
+ },
+ {
+  "id": "g2",
+  "dur": 1.5367083333333333,
+  "words": [
+   "Never",
+   "scrub.",
+   "Never",
+   "wring."
+  ],
+  "weights": [
+   4,
+   5,
+   4,
+   3
+  ]
+ },
+ {
+  "id": "r1",
+  "dur": 2.0324166666666668,
+  "words": [
+   "Rinse",
+   "in",
+   "cool",
+   "water",
+   "till",
+   "it",
+   "runs",
+   "clear."
+  ],
+  "weights": [
+   4,
+   2,
+   4,
+   5,
+   3,
+   2,
+   4,
+   4
+  ]
+ },
+ {
+  "id": "tw",
+  "dur": 2.3112916666666665,
+  "words": [
+   "Roll",
+   "it",
+   "in",
+   "a",
+   "towel",
+   "and",
+   "press",
+   "the",
+   "water",
+   "out."
+  ],
+  "weights": [
+   4,
+   2,
+   2,
+   2,
+   5,
+   3,
+   4,
+   2,
+   5,
+   3
+  ]
+ },
+ {
+  "id": "f1",
+  "dur": 1.3586666666666667,
+  "words": [
+   "Dry",
+   "it",
+   "flat,",
+   "in",
+   "the",
+   "shade."
+  ],
+  "weights": [
+   4,
+   2,
+   4,
+   2,
+   2,
+   4
+  ]
+ },
+ {
+  "id": "f2",
+  "dur": 1.2892083333333333,
+  "words": [
+   "Sunlight",
+   "fades",
+   "thread."
+  ],
+  "weights": [
+   7,
+   5,
+   4
+  ]
+ },
+ {
+  "id": "ir",
+  "dur": 3.6055,
+  "words": [
+   "Iron",
+   "on",
+   "the",
+   "reverse,",
+   "over",
+   "a",
+   "towel,",
+   "so",
+   "the",
+   "stitches",
+   "stay",
+   "raised."
+  ],
+  "weights": [
+   4,
+   2,
+   2,
+   6,
+   4,
+   2,
+   5,
+   3,
+   2,
+   7,
+   4,
+   5
+  ]
+ },
+ {
+  "id": "a1",
+  "dur": 0.988125,
+  "words": [
+   "Caps",
+   "and",
+   "bags?"
+  ],
+  "weights": [
+   4,
+   3,
+   4
+  ]
+ },
+ {
+  "id": "a2",
+  "dur": 1.8167083333333334,
+  "words": [
+   "Just",
+   "spot",
+   "clean",
+   "with",
+   "a",
+   "damp",
+   "cloth."
+  ],
+  "weights": [
+   5,
+   5,
+   5,
+   3,
+   2,
+   4,
+   4
+  ]
+ },
+ {
+  "id": "o1",
+  "dur": 2.159,
+  "words": [
+   "Be",
+   "gentle,",
+   "and",
+   "it",
+   "will",
+   "last",
+   "for",
+   "years."
+  ],
+  "weights": [
+   3,
+   7,
+   3,
+   2,
+   3,
+   4,
+   4,
+   4
+  ]
+ },
+ {
+  "id": "o2",
+  "dur": 1.3349583333333332,
+  "words": [
+   "Save",
+   "this",
+   "for",
+   "wash",
+   "day."
+  ],
+  "weights": [
+   4,
+   3,
+   4,
+   4,
+   3
+  ]
+ }
+]
