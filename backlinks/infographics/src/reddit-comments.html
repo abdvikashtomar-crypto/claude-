@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What Reddit says about hand-embroidered clothes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+  <p class="kicker">Reddit research, October 2026</p>
+  <h1>We read 395 Reddit comments on embroidered tees and sweatshirts</h1>
+  <p class="sub">Share of comments that mention each theme, across 21 threads with 19,656 combined upvotes. Praise dominates, but people asking to buy one show up as often as talk about the hours involved.</p>
+  <svg id="chart" width="1056" height="560" role="img" aria-label="Bar chart of comment themes"></svg>
+  <div class="foot">
+    <div>Method: posts and comments from r/Embroidery, r/DIYclothes, r/streetwearstartup, r/sashiko, r/SustainableFashion, r/somethingimade and fan communities, collected 5 Oct 2026 and coded by keyword. A comment can count in more than one theme.</div>
+    <div class="brand">veethreads.com</div>
+  </div>
+</div>
+<script>
+  // Counts out of 395 comments, from backlinks/research/reddit_themes.json
+  const N = 395;
+  const rows = [
+    ["Praise for the work", 151],
+    ["Time and effort", 21],
+    ["Wants to buy one or asks for a shop", 21],
+    ["Asks how it was made", 16],
+    ["Price and value", 13],
+    ["Washing and wear", 8],
+    ["Hand vs machine", 7],
+  ];
+  const svg = document.getElementById("chart");
+  const NS = "http://www.w3.org/2000/svg";
+  const W = 1056, labelW = 410, plotW = W - labelW - 110, y0 = 8, band = 72, barH = 24, max = 40;
+  const x = (v) => labelW + (v / max) * plotW;
+  const el = (n, a, t) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (t != null) e.textContent = t; svg.appendChild(e); return e; };
+  const axisY = y0 + rows.length * band;
+  for (const t of [0, 10, 20, 30, 40]) {
+    el("line", { x1: x(t), x2: x(t), y1: y0, y2: axisY, stroke: "#e4e3df", "stroke-width": 1 });
+    el("text", { x: x(t), y: axisY + 28, "text-anchor": "middle", "font-size": 17, fill: "#7a7974" }, t + "%");
+  }
+  rows.forEach(([label, n], i) => {
+    const pct = n / N * 100;
+    const cy = y0 + i * band + band / 2;
+    el("text", { x: 0, y: cy + 7, "font-size": 21, fill: "#0b0b0b" }, label);
+    const x0 = x(0), w = x(pct) - x0, y = cy - barH / 2, r4 = 4;
+    el("path", {
+      d: `M${x0},${y} H${x0 + w - r4} Q${x0 + w},${y} ${x0 + w},${y + r4} V${y + barH - r4} Q${x0 + w},${y + barH} ${x0 + w - r4},${y + barH} H${x0} Z`,
+      fill: "#2a78d6",
+    });
+    el("text", { x: x0 + w + 12, y: cy + 7, "font-size": 20, "font-weight": 700, fill: "#0b0b0b" }, pct.toFixed(1) + "%");
+    el("text", { x: x0 + w + 82, y: cy + 7, "font-size": 17, fill: "#7a7974" }, `(${n})`);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>India's embroidery exports</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero { display: flex; align-items: baseline; gap: 24px; margin: 0 0 8px; }
+  .hero .num { font-size: 96px; font-weight: 700; line-height: 1; }
+  .hero .unit { font-size: 30px; color: var(--text-secondary); }
+  .hero-note { font-size: 22px; color: var(--text-secondary); margin: 0 0 48px; }
+  .bar-label { font-size: 21px; margin: 0 0 14px; }
+  .share { display: flex; height: 56px; gap: 2px; margin: 0 0 12px; }
+  .share .seg-a { background: var(--series-1); border-radius: 6px 0 0 6px; }
+  .share .seg-b { background: var(--deemph); border-radius: 0 6px 6px 0; }
+  .share-axis { display: flex; justify-content: space-between; font-size: 17px; color: var(--text-muted); margin: 0 0 44px; }
+  .callout { font-size: 21px; color: var(--text-secondary); }
+  .callout strong { color: var(--text-primary); }
+</style>
+</head>
+<body>
+<div class="card">
+  <p class="kicker">India's handicraft exports, 2024-25</p>
+  <h1>Embroidered and crocheted goods earned India about Rs 4,350 crore abroad</h1>
+  <p class="sub">That is roughly US$514 million, up 9.12% on the year before in rupee terms (6.87% in dollar terms), while handicraft exports overall dipped slightly in dollars.</p>
+
+  <div class="hero"><span class="num">Rs 4,350</span><span class="unit">crore</span></div>
+  <p class="hero-note">Embroidered and crocheted goods exported in 2024-25</p>
+
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--series-1)"></i>Embroidered and crocheted goods</span>
+    <span><i class="swatch" style="background:var(--deemph)"></i>All other handicrafts</span>
+  </div>
+  <p class="bar-label">Share of all handicraft exports (Rs 33,122.79 crore, excluding hand-knotted carpets): <strong>about 13%</strong></p>
+  <div class="share" role="img" aria-label="Embroidered and crocheted goods are about 13 percent of handicraft exports">
+    <div class="seg-a" id="segA"></div><div class="seg-b" id="segB"></div>
+  </div>
+  <div class="share-axis"><span>0%</span><span>50%</span><span>100%</span></div>
+
+  <div class="tiles">
+    <div class="tile"><div class="value">+9.12%</div><div class="label">growth in embroidered and crocheted exports, rupee terms</div></div>
+    <div class="tile"><div class="value">~13%</div><div class="label">of India's handicraft exports by value</div></div>
+    <div class="tile"><div class="value">-0.97%</div><div class="label">change in total handicraft exports, US dollar terms</div></div>
+  </div>
+
+  <div class="foot">
+    <div>Source: Export Promotion Council for Handicrafts (EPCH), export data and Annual Report 2024-25 (epch.in). Share calculated by Vee Threads: 4,350 / 33,122.79.</div>
+    <div class="brand">veethreads.com</div>
+  </div>
+</div>
+<script>
+  const total = 33122.79, emb = 4350;
+  const pct = emb / total * 100;
+  document.getElementById("segA").style.width = pct + "%";
+  document.getElementById("segB").style.width = (100 - pct) + "%";
+</script>
+</body>
+</html>

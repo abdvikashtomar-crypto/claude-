@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Women in India's craft workforce</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .waffle-wrap { display: grid; grid-template-columns: 520px 1fr; gap: 56px; align-items: center; }
+  .waffle { display: grid; grid-template-columns: repeat(10, 44px); gap: 6px; }
+  .cell { width: 44px; height: 44px; border-radius: 6px; background: var(--deemph); }
+  .cell.w { background: var(--series-2); }
+  .note { font-size: 24px; line-height: 1.5; color: var(--text-primary); }
+  .note p { margin: 0 0 18px; }
+  .note .muted { color: var(--text-secondary); font-size: 20px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <p class="kicker">India's craft workforce</p>
+  <h1>64 out of every 100 handloom and handicraft artisans in India are women</h1>
+  <p class="sub">Each square is one artisan out of 100. India has an estimated 64.66 lakh handloom and handicraft artisans, and women make up the majority of them.</p>
+
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--series-2)"></i>Women (64)</span>
+    <span><i class="swatch" style="background:var(--deemph)"></i>All other artisans (36)</span>
+  </div>
+  <div class="waffle-wrap">
+    <div class="waffle" id="waffle" role="img" aria-label="64 of 100 squares filled for women artisans"></div>
+    <div class="note">
+      <p>Among handloom weavers the share is even higher: <strong>71%</strong> are women.</p>
+      <p class="muted">Artisans are concentrated in Uttar Pradesh, Rajasthan, Assam, Odisha, West Bengal and Tamil Nadu. Our own studio is in Bulandshahr, Uttar Pradesh.</p>
+    </div>
+  </div>
+
+  <div class="tiles" style="margin-top:44px">
+    <div class="tile"><div class="value">64.66 lakh</div><div class="label">handloom and handicraft artisans in India</div></div>
+    <div class="tile"><div class="value">64%</div><div class="label">of all those artisans are women (Aug 2025)</div></div>
+    <div class="tile"><div class="value">71%</div><div class="label">of handloom weavers are women (Aug 2025)</div></div>
+  </div>
+
+  <div class="foot">
+    <div>Source: Press Information Bureau, Govt. of India, "Handicrafts at the Heart of India's Rural Economy", 9 Dec 2025 (static.pib.gov.in). Waffle rounded to whole artisans.</div>
+    <div class="brand">veethreads.com</div>
+  </div>
+</div>
+<script>
+  const w = document.getElementById("waffle");
+  // Fill row by row from the top left so the women share reads as one block.
+  for (let i = 0; i < 100; i++) {
+    const c = document.createElement("i");
+    c.className = "cell" + (i < 64 ? " w" : "");
+    w.appendChild(c);
+  }
+</script>
+</body>
+</html>

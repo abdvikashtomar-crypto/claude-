@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hand or machine embroidery: turn it inside out</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .panel h2 { font-size: 28px; margin: 0 0 6px; }
+  .panel .tag { font-size: 19px; color: var(--text-secondary); margin: 0 0 16px; }
+  .panel svg { display: block; border-radius: 14px; }
+  .calls { list-style: none; padding: 0; margin: 18px 0 0; font-size: 19px; line-height: 1.45; }
+  .calls li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; margin: 0 0 10px; }
+  .num { width: 28px; height: 28px; border-radius: 50%; background: var(--text-primary); color: #fff;
+         font-size: 16px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+  .checks { margin-top: 40px; background: var(--surface-2); border-radius: 14px; padding: 28px 32px; }
+  .checks h3 { font-size: 24px; margin: 0 0 14px; }
+  .checks ol { margin: 0; padding-left: 26px; font-size: 20px; line-height: 1.6; columns: 2; column-gap: 48px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <p class="kicker">The 30 second test</p>
+  <h1>Hand or machine? Turn the garment inside out.</h1>
+  <p class="sub">The front of good machine embroidery can look very close to handwork. The back almost never does. This is what each one usually looks like from the inside.</p>
+
+  <div class="panels">
+    <div class="panel">
+      <h2>Hand embroidery, back side</h2>
+      <p class="tag">Made with a needle, one stitch at a time</p>
+      <svg id="hand" width="512" height="360"></svg>
+      <ul class="calls">
+        <li><span class="num">1</span><span>Small knots and short thread tails where each colour starts and stops</span></li>
+        <li><span class="num">2</span><span>Long "travel" threads jumping from one motif to the next</span></li>
+        <li><span class="num">3</span><span>Stitch lengths and angles vary slightly, even in a neat piece</span></li>
+        <li><span class="num">4</span><span>Usually no stiff backing patch behind the design</span></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2>Machine embroidery, back side</h2>
+      <p class="tag">Sewn by a multi-needle machine from a digital file</p>
+      <svg id="machine" width="512" height="360"></svg>
+      <ul class="calls">
+        <li><span class="num">1</span><span>A white bobbin thread line down the middle of satin stitches</span></li>
+        <li><span class="num">2</span><span>A stabiliser patch (paper or mesh) cut around the design</span></li>
+        <li><span class="num">3</span><span>Perfectly even, parallel stitches that repeat exactly</span></li>
+        <li><span class="num">4</span><span>Tiny trimmed thread stubs instead of knots</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="checks">
+    <h3>Five checks before you pay a handmade price</h3>
+    <ol>
+      <li>Turn it inside out and look for knots and tails.</li>
+      <li>Look for a white bobbin line inside satin areas.</li>
+      <li>Feel for a stiff stabiliser patch behind the design.</li>
+      <li>Compare two repeated motifs. Identical twins mean machine.</li>
+      <li>Ask the seller how many hours the piece took. Makers know.</li>
+    </ol>
+  </div>
+
+  <div class="foot">
+    <div>Illustration by Vee Threads, simplified for clarity. Some hand embroiderers finish the back very neatly and some machine pieces use a backing that is later removed, so use the checks together, not one alone.</div>
+    <div class="brand">veethreads.com</div>
+  </div>
+</div>
+<script>
+  const NS = "http://www.w3.org/2000/svg";
+  // Small seeded PRNG so the illustration renders the same every time.
+  let seed = 7;
+  const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const el = (svg, n, a) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
+  const badge = (svg, x, y, n) => {
+    el(svg, "circle", { cx: x, cy: y, r: 15, fill: "#0b0b0b", stroke: "#fcfcfb", "stroke-width": 2 });
+    const t = el(svg, "text", { x, y: y + 6, "text-anchor": "middle", "font-size": 16, "font-weight": 700, fill: "#fff" });
+    t.textContent = n;
+  };
+  const fabric = (svg, tone) => {
+    el(svg, "rect", { x: 0, y: 0, width: 512, height: 360, fill: tone });
+    for (let y = 6; y < 360; y += 6) el(svg, "line", { x1: 0, x2: 512, y1: y, y2: y, stroke: "#00000008", "stroke-width": 1 });
+    for (let x = 6; x < 512; x += 6) el(svg, "line", { x1: x, x2: x, y1: 0, y2: 360, stroke: "#00000006", "stroke-width": 1 });
+  };
+  // A petal filled with satin stitches across an ellipse; jitter > 0 makes it look handmade.
+  const petal = (svg, cx, cy, rx, ry, rot, color, jitter, bobbin) => {
+    const g = el(svg, "g", { transform: `rotate(${rot} ${cx} ${cy})` });
+    for (let i = -rx + 3; i < rx - 2; i += 4.2) {
+      const h = ry * Math.sqrt(1 - (i * i) / (rx * rx));
+      const j1 = (rnd() - 0.5) * jitter, j2 = (rnd() - 0.5) * jitter, a = (rnd() - 0.5) * jitter;
+      const l = document.createElementNS(NS, "line");
+      for (const [k, v] of Object.entries({ x1: cx + i + a, x2: cx + i - a, y1: cy - h + j1, y2: cy + h + j2, stroke: color, "stroke-width": 3.4, "stroke-linecap": "round" })) l.setAttribute(k, v);
+      g.appendChild(l);
+    }
+    if (bobbin) {
+      const b = document.createElementNS(NS, "line");
+      for (const [k, v] of Object.entries({ x1: cx, x2: cx, y1: cy - ry + 6, y2: cy + ry - 6, stroke: "#ffffff", "stroke-width": 5, "stroke-linecap": "round" })) b.setAttribute(k, v);
+      g.appendChild(b);
+    }
+  };
+  const flower = (svg, cx, cy, color, jitter, bobbin) => {
+    for (let k = 0; k < 5; k++) {
+      const ang = k * 72;
+      const px = cx + 34 * Math.sin(ang * Math.PI / 180), py = cy - 34 * Math.cos(ang * Math.PI / 180);
+      petal(svg, px, py, 15, 26, ang, color, jitter, bobbin);
+    }
+    el(svg, "circle", { cx, cy, r: 10, fill: "#eda100" });
+  };
+
+  // Hand panel
+  const hand = document.getElementById("hand");
+  fabric(hand, "#efe9dd");
+  flower(hand, 150, 150, "#e34948", 4.5, false);
+  flower(hand, 370, 210, "#2a78d6", 4.5, false);
+  // travel thread between motifs
+  el(hand, "path", { d: "M182 182 C 250 250, 300 120, 338 200", stroke: "#e34948", "stroke-width": 2, fill: "none" });
+  // knots with tails
+  for (const [x, y, c] of [[112, 205, "#e34948"], [196, 112, "#e34948"], [338, 262, "#2a78d6"], [420, 168, "#2a78d6"]]) {
+    el(hand, "circle", { cx: x, cy: y, r: 5, fill: c });
+    el(hand, "path", { d: `M${x} ${y} q 10 8 4 22`, stroke: c, "stroke-width": 2, fill: "none", "stroke-linecap": "round" });
+  }
+  badge(hand, 92, 214, 1); badge(hand, 262, 196, 2); badge(hand, 150, 72, 3); badge(hand, 470, 320, 4);
+
+  // Machine panel
+  const mach = document.getElementById("machine");
+  fabric(mach, "#efe9dd");
+  // stabiliser patch with rough cut edge
+  let d = "M70 60";
+  for (let x = 70; x <= 450; x += 20) d += ` L${x} ${60 + rnd() * 6}`;
+  for (let y = 60; y <= 300; y += 20) d += ` L${450 + rnd() * 6} ${y}`;
+  for (let x = 450; x >= 70; x -= 20) d += ` L${x} ${300 + rnd() * 6}`;
+  for (let y = 300; y >= 60; y -= 20) d += ` L${70 - rnd() * 6} ${y}`;
+  el(mach, "path", { d: d + " Z", fill: "#ffffff", opacity: 0.85 });
+  flower(mach, 160, 150, "#e34948", 0, true);
+  flower(mach, 360, 210, "#2a78d6", 0, true);
+  // trimmed jump thread stubs
+  for (const [x, y] of [[205, 168], [214, 176], [312, 196], [304, 204]]) el(mach, "line", { x1: x, x2: x + 6, y1: y, y2: y - 4, stroke: "#52514e", "stroke-width": 2, "stroke-linecap": "round" });
+  badge(mach, 160, 80, 1); badge(mach, 438, 74, 2); badge(mach, 104, 206, 3); badge(mach, 258, 164, 4);
+</script>
+</body>
+</html>
