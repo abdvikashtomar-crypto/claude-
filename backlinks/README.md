@@ -40,7 +40,7 @@ To edit wording or numbers: change the HTML file in `infographics/src/`, then fr
 ## Week-by-week plan
 
 **Week 1 (by 12 October): set up and hit the Diwali window**
-1. Publish `content/01` on your Journal at `/blogs/news/hand-embroidery-india-numbers`. Upload the six PNGs to Shopify > Content > Files and swap in their URLs.
+1. Review and publish the draft already in Shopify: Online Store > Blog posts > "Hand Embroidery in India, by the Numbers (2026)" (URL `/blogs/news/hand-embroidery-india-numbers`). The six infographics are already in Shopify Files.
 2. Add `care-guide.png` to the description of every tee and sweatshirt product. It answers the washing worry and gets pinned.
 3. Pin all six infographics to Pinterest, each linking to the data page.
 4. Do the eight week 1 signups in `signup-kit.md` and fix the website field on Instagram, Threads, Facebook and Pinterest.
@@ -78,7 +78,6 @@ To edit wording or numbers: change the HTML file in `infographics/src/`, then fr
 
 | Placeholder | Where |
 |---|---|
-| `IMAGE_URL` | `content/01` (Shopify file URLs) |
 | `[STUDIO EMAIL]`, `[PHONE]`, `[YOUR NAME]` | articles, templates, signup kit, pitch pack |
 | `[FILL: ...]` | `content/04` (artisan pay model, how regular work is, which traditions they trained in) and template 6 |
 | `[CHECK PRICE]`, cut-off dates | `outreach/gift-guide-pitch-pack.md` |

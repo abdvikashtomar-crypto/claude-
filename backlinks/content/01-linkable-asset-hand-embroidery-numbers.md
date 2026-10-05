@@ -3,7 +3,8 @@ PUBLISH ON: veethreads.com Journal (Shopify > Online Store > Blog posts > Add bl
 SUGGESTED URL HANDLE: hand-embroidery-india-numbers
 SEO TITLE (60 chars): Hand Embroidery in India: 2026 Numbers and Free Infographics
 META DESCRIPTION (155 chars): How many artisans, what embroidery earns abroad, how long one tee takes and what 395 Reddit comments say. Six free infographics you can reuse with credit.
-IMAGES: upload the six PNGs in backlinks/infographics/ to Shopify > Content > Files, then replace each IMAGE_URL below with the file's Shopify URL.
+STATUS: created as an UNPUBLISHED draft in Shopify (Online Store > Blog posts > "Hand Embroidery in India, by the Numbers (2026)") on 5 Oct 2026. Review it there and click Publish.
+IMAGES: already uploaded to Shopify Files (vee-threads-infographic-*.png). The draft uses their CDN URLs; the exact HTML sent is in 01-linkable-asset-hand-embroidery-numbers.html. IMAGE_URL below is only a placeholder in this Markdown copy.
 WHY THIS PAGE EXISTS: it is the page every outreach email points to. Writers link to numbers and pictures they can reuse, not to product pages.
 -->
 
@@ -41,7 +42,7 @@ Commercial embroidery machines run at roughly 800 to 1,200 stitches a minute. At
 
 By hand the scale changes completely:
 
-- Our **Parakeet and Floral oversized tee** takes **24 hours** of stitching.
+- Our **[Parakeet and Floral oversized tee](https://www.veethreads.com/products/parakeet-floral-hand-embroidered-oversized-t-shirt)** takes **24 hours** of stitching.
 - A maker on Reddit logged **25 hours** for the front of a sashiko tee with a Dennis Rodman portrait and **50 hours** once the back was finished.
 - Another maker spent "the whole month of May" on a Public Enemy tee, in 2 to 4 hour sessions, and used **150 metres** of floss.
 
@@ -93,7 +94,7 @@ If a loop of thread snags, push it to the back with a needle. Never cut it.
 
 ## Use these infographics on your site
 
-All six images are free to use in articles, school projects, newsletters and social posts. The only condition is a visible credit link to this page. Copy the code under any image:
+All six images are free to use in articles, school projects, newsletters and social posts. The only condition is a visible credit link to this page. Copy this code, then swap in the address of the image you want (right-click any image above and copy its address):
 
 ```html
 <a href="https://www.veethreads.com/blogs/news/hand-embroidery-india-numbers">
@@ -106,12 +107,12 @@ Need a different size or the underlying data? Email us at [STUDIO EMAIL] and we 
 
 ## Sources
 
-- Press Information Bureau, "Handicrafts at the Heart of India's Rural Economy", 9 December 2025.
-- Export Promotion Council for Handicrafts, export data and Annual Report 2024-25.
+- Press Information Bureau, ["Handicrafts at the Heart of India's Rural Economy"](https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/dec/doc2025129724401.pdf), 9 December 2025.
+- Export Promotion Council for Handicrafts, [export data](https://epch.in/sites/default/files/policies/exportsofhandicrafts.htm) and [Annual Report 2024-25](https://epch.in/sites/default/files/electionofcoa/EPCH_Annual_Report_2024-25.pdf).
 - Manufacturer specifications for Tajima, SWF and Melco commercial embroidery machines.
 - Vee Threads product page, Parakeet and Floral Hand Embroidered Oversized T-Shirt.
-- Reddit threads in r/Embroidery, r/streetwearstartup, r/DIYclothes, r/sashiko, r/SustainableFashion, r/Physics and others, collected 5 October 2026. Links to each thread are listed in our research notes.
-- Ellen MacArthur Foundation, "A New Textiles Economy" (2017), for the wider context below.
+- Reddit threads collected 5 October 2026, including [the Dennis Rodman sashiko tee (front)](https://www.reddit.com/r/streetwearstartup/comments/1mlv1zn/), [the same tee finished](https://www.reddit.com/r/Embroidery/comments/1o93voo/), [the Public Enemy tee](https://www.reddit.com/r/DIYclothes/comments/1tyjd0e/), [the physics teacher's gift](https://www.reddit.com/r/Physics/comments/1l432bs/), [the Bob's Burgers tee](https://www.reddit.com/r/BobsBurgers/comments/liaeb8/) and [the r/sashiko washing discussion](https://www.reddit.com/r/sashiko/comments/1llwzaj/).
+- Ellen MacArthur Foundation, ["A New Textiles Economy"](https://content.ellenmacarthurfoundation.org/m/6d5071bb8a5f05a2/original/A-New-Textiles-Economy-Redesigning-fashions-future.pdf) (2017), for the wider context below.
 
 *A note on why any of this matters: the Ellen MacArthur Foundation found that the average number of times a garment is worn fell 36% in fifteen years, and that one garbage truck of textiles is burned or landfilled every second. A tee that took 24 hours to stitch is a tee people keep. That is the whole case for hand embroidery in one line.*
 
