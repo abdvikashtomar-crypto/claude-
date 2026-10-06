@@ -57,3 +57,25 @@ The data page went live first: https://www.veethreads.com/blogs/news/hand-embroi
 | YourStory | editorial@yourstory.com | No reply. The July email still had "[add your number before sending]" in it | Resend once through their story submission form with your number |
 | Fibre2Fashion | articles@fibre2fashion.com | No reply | One follow-up with the data page |
 | IIAD The Circle | info@iiad.edu.in | No reply | One follow-up with the data page |
+
+## 6 October 2026, second batch
+
+| Sent to | Address | Subject | Status |
+|---|---|---|---|
+| Grazia India | grazia.edit@wwm.co.in | Diwali gifting idea: names hand-embroidered by women artisans in Uttar Pradesh | Sent |
+| SheThePeople | team@shethepeople.tv | Story idea: the women artisans of Bulandshahr behind a hand embroidery label | Sent |
+| Women's Web | community@womensweb.in | Story pitch: how five women in Bulandshahr turned embroidery into steady work | Sent |
+| Mr X Stitch | artist@mrxstitch.com | Feature submission: hand embroidery on streetwear from a women's studio in India | Sent |
+| Sew What, Alicia? | sewwhatalicia@gmail.com | Guest tutorial idea: hand embroidery on t-shirts without the puckering | Sent |
+| Brown Girl Magazine | hello@browngirlmagazine.com | Pitch: buying "artisan made" from India? Six questions to ask first | Sent |
+| StartupTalky | story@startuptalky.com | Founder story: pricing hand embroidery when a single tee takes 24 hours | Sent |
+
+**If they say yes, you will need:**
+- **Mr X Stitch:** 6 high-resolution photos, including close-ups of the front and back of the stitching.
+- **Sew What, Alicia?:** a new tutorial on stitching onto t-shirts, with step photos from the studio (Claude can draft the text).
+- **Brown Girl Magazine and Women's Web:** drafts based on `content/04`, after you fill in how artisans are paid.
+- **SheThePeople:** a time for a call with the artisans, in Hindi.
+
+**Web-form only (do these yourself):** The Better India, The Voice of Fashion, TextileArtist.org, DESIblitz, MissMalini. Links are in `prospects.csv`.
+
+**Follow-up date for both batches:** 13 October, one reply in each thread, using template 7.
