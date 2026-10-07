@@ -79,3 +79,22 @@ The data page went live first: https://www.veethreads.com/blogs/news/hand-embroi
 **Web-form only (do these yourself):** The Better India, The Voice of Fashion, TextileArtist.org, DESIblitz, MissMalini. Links are in `prospects.csv`.
 
 **Follow-up date for both batches:** 13 October, one reply in each thread, using template 7.
+
+## 6 October 2026, guest post submissions (full articles)
+
+Each article is in `content/guest-posts/` as Markdown and as a Word file, and in Google Drive as a Google Doc shared only with that site's editor (view access, so they can download it as Word).
+
+| Site | Address | Article | How it was sent | What happens next |
+|---|---|---|---|---|
+| Epheriell Designs (handmade business blog) | jessica@epherielldesigns.com | What a 24 Hour T-Shirt Taught Us About Pricing Handmade Work (~1,100 words) | Subject "Guest Post Submission" as their guidelines ask; Google Doc link, full-size image link with attribution, bio | They run 1 to 2 guest posts a week. If they want files attached, send the .docx and `infographics/hours-per-piece.png` from this repo |
+| Slow Fashion Movement (Amsterdam non-profit) | blog@slowfashion.global | Slow Fashion, Stitch by Stitch: Inside a Made-to-Order Embroidery Studio in India (~850 words) | Short pitch plus the full draft as a Google Doc | They asked writers to "discuss ideas" first, so expect a reply about angle or length |
+| Fibre2Fashion (textile industry site) | articles@fibre2fashion.com | Hand Embroidery in India: A Growing Export Built on Women's Hours (~1,300 words) | Full article in the email body with contact details. Google would not share the Doc with their address, and they ask for Word files, so the email offers a Word version | They only reply if accepted, within 1 to 8 weeks. Their guidelines also ask for a phone number and postal address; add these if they reply |
+
+**Google Docs (in your Drive):**
+- Fibre2Fashion: https://docs.google.com/document/d/1uGLhvMS2vLbWM83wCUm4f59iaMIBhMA6nFnZjGly8PQ/edit
+- Epheriell Designs: https://docs.google.com/document/d/1UsZ55wn2BP1VrxSkAe3SAJUellVL06cuqb9c7eW2mbI/edit
+- Slow Fashion Movement: https://docs.google.com/document/d/1Vjo9R08s7jZJIhuujVuIsNHUK4A-Jvu8U6c0Oe-pnag/edit
+
+**Do not submit these same articles anywhere else** while they are under review. Each site asked for original, unpublished work.
+
+**Not used, and why:** Fabric Instructor (bans links to for-profit sites), Good Maker Tales (wants writing samples first and takes full ownership), The Formal Club (link exchange), Indian Fashion Blog (submission address belongs to a guest-post seller), Feminism in India (wants a personal statement only you can write; pitch only, no drafts), Sahapedia and Down To Earth (concept note first; a fit later, once you have more artisan material).
