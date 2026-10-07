@@ -110,3 +110,14 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 | Women's Web | community@womensweb.in bounced (address not found) | Not resent. Women's Web is a contributor platform: register at https://www.womensweb.in/social-registration/ and publish the artisans' story yourself |
 
 **Follow-up reminder:** set for 13 October, 10:00 IST. On that day, each unanswered pitch gets one short follow-up in its thread. Fibre2Fashion and StartupTalky are excluded.
+
+## 7 October 2026, evening check
+
+| Who | What happened | What it means |
+|---|---|---|
+| StartupTalky | A second automatic reply arrived after the article was sent. It says stories pitched to them "are handled as paid brand collaborations" | Both StartupTalky replies were automatic, so nobody has actually agreed to publish. Do not pay for a placement. If the article is not on startuptalky.com by 20 October, treat it as declined; it can then go to another site |
+| Everyone else | No new replies | Normal one day after sending. The 13 October follow-up round is still set |
+
+**New prospects that need photos first:** Selvedge (online stories) and Embroidery magazine. Drafts and a six-photo shot list are in `photo-led-pitches.md`.
+
+**Also in your inbox:** Search Console emailed today that some pages in your sitemap now return "Not found (404)". The email does not list them; open the Page indexing report in Search Console to see which ones. If any of them used to be product or blog pages, add a redirect to the closest live page in Shopify (Online Store, Navigation, URL Redirects) so links pointing at them still count.

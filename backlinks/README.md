@@ -20,6 +20,7 @@ veethreads.com has about 20 referring domains, and the ones the backlink index s
 | [`content/reddit-playbook.md`](content/reddit-playbook.md) | How to use Reddit without getting banned, and four post ideas |
 | [`outreach/email-templates.md`](outreach/email-templates.md) | Eight email templates matched to the `template` column in the CSV |
 | [`outreach/gift-guide-pitch-pack.md`](outreach/gift-guide-pitch-pack.md) | Paste-ready product blurbs for Diwali and other gift guides |
+| [`outreach/photo-led-pitches.md`](outreach/photo-led-pitches.md) | Selvedge and Embroidery magazine pitches, plus the six photos to take before sending them |
 | [`infographics/`](infographics/) | Six PNG infographics (2400 px wide) and their HTML sources |
 | [`research/`](research/) | Competitor findings, every statistic with its source, Reddit and Quora research, raw theme counts |
 | [`scripts/render-infographics.mjs`](scripts/render-infographics.mjs) | Re-renders the PNGs after you edit any `infographics/src/*.html` file |
