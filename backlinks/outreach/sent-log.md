@@ -98,3 +98,15 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 **Do not submit these same articles anywhere else** while they are under review. Each site asked for original, unpublished work.
 
 **Not used, and why:** Fabric Instructor (bans links to for-profit sites), Good Maker Tales (wants writing samples first and takes full ownership), The Formal Club (link exchange), Indian Fashion Blog (submission address belongs to a guest-post seller), Feminism in India (wants a personal statement only you can write; pitch only, no drafts), Sahapedia and Down To Earth (concept note first; a fit later, once you have more artisan material).
+
+## 7 October 2026
+
+**Replies and bounces from the 6 October batch**
+
+| Who | What happened | Action taken |
+|---|---|---|
+| StartupTalky | Replied: "If you have not shared the content yet, please feel free to send it across and our team will take it from there." | Sent the full article "Seven Lessons From Building a Made-to-Order Hand Embroidery Brand in Small-Town India" (~1,100 words) as a reply in their thread. Source: `content/guest-posts/startuptalky-made-to-order-lessons.md` |
+| Mr X Stitch | artist@mrxstitch.com bounced (address not found) | Resent the same feature submission to hello@mrxstitch.com, the address on their Facebook page. No bounce so far |
+| Women's Web | community@womensweb.in bounced (address not found) | Not resent. Women's Web is a contributor platform: register at https://www.womensweb.in/social-registration/ and publish the artisans' story yourself |
+
+**Follow-up reminder:** set for 13 October, 10:00 IST. On that day, each unanswered pitch gets one short follow-up in its thread. Fibre2Fashion and StartupTalky are excluded.
