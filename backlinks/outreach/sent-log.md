@@ -121,3 +121,14 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 **New prospects that need photos first:** Selvedge (online stories) and Embroidery magazine. Drafts and a six-photo shot list are in `photo-led-pitches.md`.
 
 **Also in your inbox:** Search Console emailed today that some pages in your sitemap now return "Not found (404)". The email does not list them; open the Page indexing report in Search Console to see which ones. If any of them used to be product or blog pages, add a redirect to the closest live page in Shopify (Online Store, Navigation, URL Redirects) so links pointing at them still count.
+
+## 7 October 2026, third batch (free editorial sites)
+
+| Sent to | Address | Subject | Status |
+|---|---|---|---|
+| India Development Review | writetous@idronline.org | Pitch: what home-based embroiderers need from the brands that sell their work | Sent. Reply usually within two weeks. If they say yes, the piece needs the artisans' own words (short interviews in Hindi) |
+| India Together | indiatogether@oorvani.in | Article proposal: "embroidered" says nothing about who made it, and that costs artisans | Sent. Offers the full text (about 900 words) if they want it; Claude can write it from `research/sources-and-stats.md` |
+
+**Web form only (do these yourself):** Village Square Field Journal (https://www.villagesquare.in/write-for-us/) and Gaatha's craft business listing (https://gaatha.com/join-handicraft-business-in-india/).
+
+**Follow-up:** add both to the 13 October round only if more than a week has passed with no reply; otherwise follow up on 20 October.
