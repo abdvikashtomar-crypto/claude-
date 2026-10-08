@@ -153,3 +153,13 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 **Web form (do yourself):** Eco Club sustainable brands directory, https://ecoclubofficial.com/sustainable-brands/ (free).
 
 **Follow-up:** 20 October if no reply.
+
+## 8 October 2026, craft and trade publications
+
+| Sent to | Address | Subject | Status |
+|---|---|---|---|
+| Craft Industry Alliance | hello@craftindustryalliance.org | Pitch: what 395 Reddit comments say about selling hand-embroidered clothing | Sent. They reply only if interested |
+| Handmade Seller magazine | info@handmadeseller.com | Seller story idea: a women's hand embroidery studio in small-town India | Sent |
+| Textile Value Chain | info@textilevaluechain.com | Industry view article offer: the economics of hand embroidery in made-to-order fashion | Sent. If accepted, Claude writes the article; you supply an author photo |
+
+**Follow-up:** 20 October if no reply.
