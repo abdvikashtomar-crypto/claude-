@@ -140,3 +140,16 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 | India Development Review | Automatic reply: they can take up to two weeks to respond | None needed. Wait until about 21 October |
 | India Together | indiatogether@oorvani.in bounced (address not found) | Resent the same proposal to editors@indiatogether.org. No bounce so far |
 | Everyone else | No replies yet | The 13 October follow-up round is still set |
+
+## 8 October 2026, wedding-season pitches
+
+| Sent to | Address | Subject | Status |
+|---|---|---|---|
+| WeddingSutra | editor@weddingsutra.com | Story idea for wedding season: names and dates hand-embroidered for the bridal party | Sent |
+| WedMeGood | info@wedmegood.com | For your blog: hand-embroidered personalised gifts for the bride, groom and bridesmaids | Sent (general inbox, asked to forward to the blog team) |
+
+**Skipped on purpose:** iDiva's listed address is for paid brand collaborations; Vogue and Cosmopolitan staff addresses came only from contact-finder sites and could not be verified.
+
+**Web form (do yourself):** Eco Club sustainable brands directory, https://ecoclubofficial.com/sustainable-brands/ (free).
+
+**Follow-up:** 20 October if no reply.
