@@ -132,3 +132,11 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 **Web form only (do these yourself):** Village Square Field Journal (https://www.villagesquare.in/write-for-us/) and Gaatha's craft business listing (https://gaatha.com/join-handicraft-business-in-india/).
 
 **Follow-up:** add both to the 13 October round only if more than a week has passed with no reply; otherwise follow up on 20 October.
+
+## 8 October 2026 check
+
+| Who | What happened | Action taken |
+|---|---|---|
+| India Development Review | Automatic reply: they can take up to two weeks to respond | None needed. Wait until about 21 October |
+| India Together | indiatogether@oorvani.in bounced (address not found) | Resent the same proposal to editors@indiatogether.org. No bounce so far |
+| Everyone else | No replies yet | The 13 October follow-up round is still set |
