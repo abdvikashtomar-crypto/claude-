@@ -163,3 +163,12 @@ Each article is in `content/guest-posts/` as Markdown and as a Word file, and in
 | Textile Value Chain | info@textilevaluechain.com | Industry view article offer: the economics of hand embroidery in made-to-order fashion | Sent. If accepted, Claude writes the article; you supply an author photo |
 
 **Follow-up:** 20 October if no reply.
+
+## 10 October 2026 check
+
+| Who | What happened | Action taken |
+|---|---|---|
+| **Textile Value Chain** | **Accepted.** 9 Oct: "This sounds like a great topic. Please proceed with the article and share the full version." | Wrote and sent "Hand Embroidery Meets D2C: Production Lessons From a Made-to-Order Studio" (~1,450 words, summary, references, bio linking veethreads.com) in their thread. Files: `content/guest-posts/textilevaluechain-hand-embroidery-d2c.md` and `.docx` |
+| Everyone else | No replies yet | 13 October follow-up round still set |
+
+**You need to do:** reply in the Textile Value Chain thread with a clear head-and-shoulders photo of yourself (JPEG). Their guidelines ask for one with every article. If they ask for the Word file, attach `content/guest-posts/textilevaluechain-hand-embroidery-d2c.docx` from this repo.
